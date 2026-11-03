@@ -215,7 +215,7 @@ The withdrawal rate limit remains unlimited.
 - **Authorization**: [Sky Atlas](https://sky-atlas.io/#aa16daa3-ee62-49eb-851e-cb0708670144)
 - **Proposal**: [Prime Technical Scope](https://forum.skyeco.com/t/november-5-2026-proposed-changes-to-grove-for-upcoming-spell/28336)
 
-If this executive proposal passes, then the Grove proxy spell will swap **1,484,740.589999 USDC** held by the [Grove SubProxy](https://etherscan.io/address/0x1369f7b2b38c76B6478c0f0E66D94923421891Ba) for USDS through the [USDS PSM wrapper](https://etherscan.io/address/0xA188EEC8F81263234dA3622A406892F3D630f98c), with the resulting USDS retained by the Grove SubProxy.
+If this executive proposal passes, then the Grove proxy spell will swap **1,484,740.589999 USDC** held by the [`GROVE_SUBPROXY`](https://etherscan.io/address/0x1369f7b2b38c76B6478c0f0E66D94923421891Ba) for USDS through [WRAPPER_USDS_LITE_PSM_USDC_A](https://etherscan.io/address/0xA188EEC8F81263234dA3622A406892F3D630f98c), with the resulting USDS retained by the Grove SubProxy.
 
 ##### [Base] Increase Deposit Rate Limit of Grove x Steakhouse USDC Morpho Vault V2
 
