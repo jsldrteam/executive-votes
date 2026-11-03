@@ -71,6 +71,7 @@ If this executive proposal passes, then the offboarding of the `PSM-GUSD-A` and 
   - `MCD_PSM_PAX_A_INPUT_CONDUIT_JAR`
 
 Following these changes, the Chainlog version will be updated from `1.20.21` to `1.20.22`.
+
 ### Skybase Foundation Grant
 
 - **Authorization**: [Sky Governance Poll](https://vote.sky.money/polling/QmYNuyHd)
