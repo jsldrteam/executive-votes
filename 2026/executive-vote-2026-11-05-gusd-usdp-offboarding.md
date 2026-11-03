@@ -187,7 +187,7 @@ If this executive proposal passes, then the Spark proxy spell will grant `DEFAUL
 - **Authorization**: [Spark Snapshot Poll](https://snapshot.box/#/s:sparkfi.eth/proposal/0xa0cf2d0ad428858797853eb9b015bf921e2f53a07b96aaa4de4bf28e84653298)
 - **Proposal**: [Prime Technical Scope](https://forum.skyeco.com/t/november-5-2026-proposed-changes-to-spark-for-upcoming-spell/28351)
 
-If this executive proposal passes, then the Spark proxy spell will transfer administration of the [Base Diamond PAU Beacon](https://basescan.org/address/0x7ac96180C4d6b2A328D3a19ac059D0E7Fc3C6d41) from the [Base Spark Executor](https://basescan.org/address/0xF93B7122450A50AF3e5A76E1d546e95Ac1d0F579) to the [Sky governance relay](https://basescan.org/address/0xdD0BCc201C9E47c6F6eE68E4dB05b652Bb6aC255), granting the relay admin access before removing the Executor's admin role.
+If this executive proposal passes, then the Spark proxy spell will transfer administration of the [Base Diamond PAU Beacon](https://basescan.org/address/0x7ac96180C4d6b2A328D3a19ac059D0E7Fc3C6d41) from the [Base Spark Executor](https://basescan.org/address/0xF93B7122450A50AF3e5A76E1d546e95Ac1d0F579) to the [Sky Governance Relay](https://basescan.org/address/0xdD0BCc201C9E47c6F6eE68E4dB05b652Bb6aC255), granting the relay admin access before removing the Executor's admin role.
 
 #### Grove Proxy Spell
 
