@@ -121,10 +121,16 @@ The Pull Request for the Spark proxy spell can be viewed [here](https://github.c
 - **Authorization**: [Spark Snapshot Poll](https://snapshot.box/#/s:sparkfi.eth/proposal/0x49ea98e37b49e441c62a5747225794d7351624af28e7ab3a52d18ededde95263)
 - **Proposal**: [Prime Technical Scope](https://forum.skyeco.com/t/november-5-2026-proposed-changes-to-spark-for-upcoming-spell/28351)
 
-If this executive proposal passes, then the Spark proxy spell will enable the Spark Liquidity Layer to mint and redeem [OUSD](https://etherscan.io/address/0x9f6F3991D525015a6F8CaF062C83b62fD3AC4436) through Bridge deposit addresses, with separate asset-transfer rate limits:
+If this executive proposal passes, then the Spark proxy spell will enable the Spark Liquidity Layer to mint and redeem [OUSD](https://etherscan.io/address/0x9f6F3991D525015a6F8CaF062C83b62fD3AC4436) through Bridge deposit addresses, with the following [rate limits](https://sky-atlas.io/#8efb0a11-b798-48eb-af19-f65b38f039b5):
 
-- **Mint OUSD:** Transfer USDC to the [Bridge USDC deposit address](https://etherscan.io/address/0xCeB913e6CB36651af7FA4585F6C8F0e81C015A5F), with a maximum of **5 million USDC** and a refill rate of **50 million USDC per day**.
-- **Redeem OUSD:** Transfer OUSD to the [Bridge OUSD deposit address](https://etherscan.io/address/0x3539f3f7F3A368EAf87315cE56ea2834a6e6a195), with a maximum of **5 million OUSD** and a refill rate of **200 million OUSD per day**.
+- OUSD mint leg — USDC transfer rate limit (`LIMIT_ASSET_TRANSFER`):
+  - Destination: [Bridge USDC deposit address](https://etherscan.io/address/0xCeB913e6CB36651af7FA4585F6C8F0e81C015A5F)
+  - `maxAmount`: **5 million USDC**
+  - `slope`: **50 million USDC per day**
+- OUSD redemption leg — OUSD transfer rate limit (`LIMIT_ASSET_TRANSFER`):
+  - Destination: [Bridge OUSD deposit address](https://etherscan.io/address/0x3539f3f7F3A368EAf87315cE56ea2834a6e6a195)
+  - `maxAmount`: **5 million OUSD**
+  - `slope`: **200 million OUSD per day**
 
 ##### [Ethereum] Spark Liquidity Layer - Onboard Uniswap v4 OUSD/USDS Pool
 
@@ -154,22 +160,26 @@ All three pool-action rate limits above are denominated in **USDS terms**.
 - **Authorization**: [Sky Atlas](https://sky-atlas.io/#ea73f176-0b94-4e93-b1ee-ca498ac5a6c6)
 - **Proposal**: [Prime Technical Scope](https://forum.skyeco.com/t/november-5-2026-proposed-changes-to-spark-for-upcoming-spell/28351)
 
-If this executive proposal passes, then the Spark proxy spell will claim accrued SparkLend reserves. Stablecoin reserves will be routed to the Spark Liquidity Layer's Ethereum ALM Proxy, while other claimed reserves will be sent to the Spark Operations Multisig. The amounts will depend on reserves accrued at execution.
+If this executive proposal passes, then the Spark proxy spell will claim accrued SparkLend reserves. Stablecoin reserves will be routed to the [Spark Liquidity Layer's Ethereum ALM Proxy](https://etherscan.io/address/0x1601843c5E9bC251A3272907010AFa41Fa18347E), while other claimed reserves will be sent to the [Spark Operations Multisig](https://etherscan.io/address/0x2E1b01adABB8D4981863394bEa23a1263CBaeDfC). The amounts will depend on reserves accrued at execution.
 
 ##### [Base] Spark Liquidity Layer - Activate Diamond PAU Parallel Controller, Open CCTP V2 Route, and Update Operators
 
 - **Authorization**: [Spark Snapshot Poll](https://snapshot.box/#/s:sparkfi.eth/proposal/0xa0cf2d0ad428858797853eb9b015bf921e2f53a07b96aaa4de4bf28e84653298)
 - **Proposal**: [Prime Technical Scope](https://forum.skyeco.com/t/november-5-2026-proposed-changes-to-spark-for-upcoming-spell/28351)
 
-If this executive proposal passes, then the Spark proxy spell will activate the Diamond PAU parallel controller alongside the existing controller on Base and configure its CCTP V2 USDC route to Ethereum:
+If this executive proposal passes, then the Spark proxy spell will activate the Diamond PAU parallel controller alongside the existing controller on Base, configure the CCTP V2 USDC route to Ethereum with the following [rate limits](https://sky-atlas.io/#8efb0a11-b798-48eb-af19-f65b38f039b5), and update operator permissions:
 
 - Grant the `CONTROLLER` role on the [Base ALM Proxy](https://basescan.org/address/0x2917956eFF0B5eaF030abDB4EF4296DF775009cA) to the [Diamond PAU Controller](https://basescan.org/address/0xd864bF1Ea2f78Dc2013E3FC7e4C474383BE9d456), without removing the existing controller.
 - On the [PAU Administered Agent](https://basescan.org/address/0x70E46bAf2E3F27a119757D7b796c641C8bc087cE):
   - Add the [Soter Labs freezer multisig](https://basescan.org/address/0x747BF29B189e2a070a921Af7Cf65681E3d5F5967) as a revoker.
   - Add the [Soter Labs grantor multisig](https://basescan.org/address/0x97EC6398e5dD047BA3223cFC017bFC6436Ac3Fe7) as a grantor and remove the [previous PAU grantor multisig](https://basescan.org/address/0x4B61A0E48dd1e300f64090C60F414c1aC6CbC514) from the grantor role.
   - Add the [Spark hot wallet](https://basescan.org/address/0x062cE42caE04c51D04E77e3D64cc8953a2296FfE) as an actor.
-- Set the aggregate CCTP rate-limit key to **unlimited**.
-- Configure the CCTP V2 route from **Base to Ethereum (domain 0)** with a maximum of **5 million USDC** and a refill rate of **50 million USDC per day**.
+- Aggregate CCTP V2 rate limit (`cctp_toCCTPRateLimitKey()`):
+  - `maxAmount`: **Unlimited**
+- CCTP V2 Base-to-Ethereum route rate limit (`cctp_getToDomainRateLimitKey(0)`):
+  - Destination domain: **0** (Ethereum)
+  - `maxAmount`: **5 million USDC**
+  - `slope`: **50 million USDC per day**
 - Set the CCTP destination to the [Ethereum ALM Proxy](https://etherscan.io/address/0x1601843c5E9bC251A3272907010AFa41Fa18347E), with both CCTP fee caps set to **zero**.
 
 ##### [Base] Spark Liquidity Layer - Grant PAS Configurator Admin over PAU Access Controls and Rate Limits
@@ -198,12 +208,13 @@ The Pull Request for the Grove proxy spell can be viewed [here](https://github.c
 - **Authorization**: [Grove Snapshot Poll](https://snapshot.box/#/s:grovefinance.eth/proposal/0xa813ec78cae204f323f891b6dccdba89a6a74fb76cb612a63cd96d5332efacdb)
 - **Proposal**: [Prime Technical Scope](https://forum.skyeco.com/t/november-5-2026-proposed-changes-to-grove-for-upcoming-spell/28336)
 
-If this executive proposal passes, then the Grove proxy spell will increase the deposit rate limit for the [Grove x Steakhouse USDC Morpho Vault v2 on Ethereum](https://etherscan.io/address/0xBeefF08dF54897e7544aB01d0e86f013DA354111) as follows:
+If this executive proposal passes, then the Grove proxy spell will increase the deposit rate limit for the [Grove x Steakhouse USDC Morpho Vault V2 on Ethereum](https://etherscan.io/address/0xBeefF08dF54897e7544aB01d0e86f013DA354111) with the following [rate limits](https://sky-atlas.io/#8efb0a11-b798-48eb-af19-f65b38f039b5):
 
-- Maximum deposit amount: **100 million USDC**.
-- Deposit refill rate: **100 million USDC per day**.
-
-The withdrawal rate limit remains unlimited.
+- Deposit rate limit (`LIMIT_4626_DEPOSIT`):
+  - `maxAmount`: **100 million USDC**
+  - `slope`: **100 million USDC per day**
+- Withdrawal rate limit (unchanged):
+  - `maxAmount`: **Unlimited**
 
 ##### [Ethereum] Swap Grove SubProxy USDC to USDS
 
@@ -217,12 +228,13 @@ If this executive proposal passes, then the Grove proxy spell will swap **1,484,
 - **Authorization**: [Grove Snapshot Poll](https://snapshot.box/#/s:grovefinance.eth/proposal/0x5da7eb8f4101223ff240384be3cbde658b385af1f097575c761ad5839ff8c1a0)
 - **Proposal**: [Prime Technical Scope](https://forum.skyeco.com/t/november-5-2026-proposed-changes-to-grove-for-upcoming-spell/28336)
 
-If this executive proposal passes, then the Grove proxy spell will increase the deposit rate limit for the [Grove x Steakhouse USDC Morpho Vault V2 on Base](https://basescan.org/address/0xbeef0786756810478b88982DE00F3CD7fdB8e7c7) as follows:
+If this executive proposal passes, then the Grove proxy spell will increase the deposit rate limit for the [Grove x Steakhouse USDC Morpho Vault V2 on Base](https://basescan.org/address/0xbeef0786756810478b88982DE00F3CD7fdB8e7c7) with the following [rate limits](https://sky-atlas.io/#8efb0a11-b798-48eb-af19-f65b38f039b5):
 
-- Maximum deposit amount: **100 million USDC**.
-- Deposit refill rate: **100 million USDC per day**.
-
-The withdrawal rate limit remains unlimited.
+- Deposit rate limit (`LIMIT_4626_DEPOSIT`):
+  - `maxAmount`: **100 million USDC**
+  - `slope`: **100 million USDC per day**
+- Withdrawal rate limit (unchanged):
+  - `maxAmount`: **Unlimited**
 
 ---
 
