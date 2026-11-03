@@ -96,7 +96,7 @@ If this executive proposal passes, then the following DC-IAM parameters will app
 
 - **Authorization**: [Atlas A.2.11.1.2.3 - Safe Harbor Modifications](https://sky-atlas.io/#fcd868db-4a91-4ee0-baf5-1ebd40fc651e)
 
-If this executive proposal passes, then the Safe Harbor Agreement will be updated to include the following accounts on **Base** (`eip155:8453`), with the scopes specified below.
+If this executive proposal passes, then the Safe Harbor Agreement will be updated to include the following accounts on **Base** (`eip155:8453`).
 
 - PAS BeamState: [`0x29840a8519013F483d94781b5C1671b552A109e1`](https://basescan.org/address/0x29840a8519013F483d94781b5C1671b552A109e1)
 - PAS Configurator: [`0x458Acd38fD749F6325039e63e8Bc496dBc286D11`](https://basescan.org/address/0x458Acd38fD749F6325039e63e8Bc496dBc286D11)
