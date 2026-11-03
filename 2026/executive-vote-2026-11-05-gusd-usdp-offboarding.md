@@ -146,8 +146,8 @@ If this executive proposal passes, then the Spark proxy spell will onboard the [
 - Position tick limits: **276,314 to 276,334**, with a **10-tick** deviation around the configured center.
 - Maximum slippage parameter: `0.999e18` (requiring at least **99.9%** of the input value to be returned).
 - Liquidity deposits:
-  - maxAmount: **10 million USDS**
-  - slope: **50 million USDS per day**.
+  - `maxAmount`: **10 million USDS**
+  - `slope`: **50 million USDS per day**.
 - Liquidity withdrawals: **Unlimited**.
 - Swaps:
   - maxAmount: **5 million USDS**,
