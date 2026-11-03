@@ -139,19 +139,21 @@ If this executive proposal passes, then the Spark proxy spell will enable the Sp
 
 If this executive proposal passes, then the Spark proxy spell will onboard the [Uniswap v4](https://developers.uniswap.org/docs/protocols/v4/concepts/architecture) OUSD/USDS pool for the Spark Liquidity Layer with the following configuration:
 
-- Pool ID: `0x710254704dfff19aee863a784a36823eb9c926cae8d3d425080d7c88c144a9c7`.
-- Pool fee parameter: **5**
-  - tick spacing: **1 tick**
-  - hooks: **none**.
-- Position tick limits: **276,314 to 276,334**, with a **10-tick** deviation around the configured center.
-- Maximum slippage parameter: `0.999e18` (requiring at least **99.9%** of the input value to be returned).
-- Liquidity deposits:
+- Uniswap v4 Parameters: 
+  - Pool ID: `0x710254704dfff19aee863a784a36823eb9c926cae8d3d425080d7c88c144a9c7`
+  - Pool fee parameter: **0.0005%**
+  - tick spacing: **1**
+  - hooks: **none**
+  - Position tick limits: **276,314 to 276,334**, with a **10-tick** deviation around the configured center
+- Deposit rate limit parameters:
   - `maxAmount`: **10 million USDS**
-  - `slope`: **50 million USDS per day**.
-- Liquidity withdrawals: **Unlimited**.
-- Swaps:
-  - `maxAmount`: **5 million USDS**,
-  - `slope`: **100 million USDS per day**.
+  - `slope`: **50 million USDS per day**
+- Withdrwawal rate limit parameters:
+  - `maxAmount`: **Unlimited**
+- Swap rate limit parameters:
+  - `maxAmount`: **5 million USDS**
+  - `slope`: **100 million USDS per day**
+  - Maximum slippage: **0.1%** (`0.999e18`)
 
 All three pool-action rate limits above are denominated in **USDS terms**.
 
