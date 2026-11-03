@@ -88,7 +88,7 @@ The transfer uses existing funds held by the Skybase SubProxy; it does not mint 
 
 If this executive proposal passes, then the following DC-IAM parameters will apply to `ALLOCATOR-SPARK-A`:
 
-- Increase the [Ceiling Increase Cooldown (`ttl`)](https://sky-atlas.io/#a5ae79ad-9460-41a3-8dbf-65605f54b79b) by **43,200 seconds**, from **43,200 seconds (12 hours)** to **86,400 seconds (24 hours)**.
+- Increase the [Ceiling Increase Cooldown (`ttl`)](https://sky-atlas.io/#a5ae79ad-9460-41a3-8dbf-65605f54b79b) by 43,200 seconds, from 43,200 seconds (12 hours) to **86,400 seconds (24 hours)**.
 - Leave the [Maximum Debt Ceiling (`line`)](https://sky-atlas.io/#6ba18f25-dae8-4fa5-929e-3c7071b70107) unchanged at **10 billion USDS**.
 - Leave the [Target Available Debt (`gap`)](https://sky-atlas.io/#07353080-4346-4ffd-bfc8-913cac78776a) unchanged at **1.5 billion USDS**.
 
