@@ -150,8 +150,8 @@ If this executive proposal passes, then the Spark proxy spell will onboard the [
   - `slope`: **50 million USDS per day**.
 - Liquidity withdrawals: **Unlimited**.
 - Swaps:
-  - maxAmount: **5 million USDS**,
-  - slope: **100 million USDS per day**.
+  - `maxAmount`: **5 million USDS**,
+  - `slope`: **100 million USDS per day**.
 
 All three pool-action rate limits above are denominated in **USDS terms**.
 
