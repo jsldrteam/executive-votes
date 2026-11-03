@@ -139,7 +139,7 @@ If this executive proposal passes, then the Spark proxy spell will enable the Sp
 
 If this executive proposal passes, then the Spark proxy spell will onboard the [Uniswap v4](https://developers.uniswap.org/docs/protocols/v4/concepts/architecture) OUSD/USDS pool for the Spark Liquidity Layer with the following configuration:
 
-- Uniswap v4 Parameters: 
+- Uniswap v4 Parameters:
   - Pool ID: `0x710254704dfff19aee863a784a36823eb9c926cae8d3d425080d7c88c144a9c7`
   - Pool fee parameter: **0.0005%**
   - tick spacing: **1**
