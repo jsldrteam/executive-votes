@@ -98,16 +98,11 @@ If this executive proposal passes, then the following DC-IAM parameters will app
 
 If this executive proposal passes, then the Safe Harbor Agreement will be updated to include the following accounts on **Base** (`eip155:8453`), with the scopes specified below.
 
-#### Base — Scope 0
-
 - PAS BeamState: [`0x29840a8519013F483d94781b5C1671b552A109e1`](https://basescan.org/address/0x29840a8519013F483d94781b5C1671b552A109e1)
 - PAS Configurator: [`0x458Acd38fD749F6325039e63e8Bc496dBc286D11`](https://basescan.org/address/0x458Acd38fD749F6325039e63e8Bc496dBc286D11)
 - PAS Timelock: [`0x2ACADc011b4fc13072F92231D1216c16deac5188`](https://basescan.org/address/0x2ACADc011b4fc13072F92231D1216c16deac5188)
 - CCTP V2 facet: [`0xb22d50c393c6E1D13E3e05B172448dD8BF8DdC32`](https://basescan.org/address/0xb22d50c393c6E1D13E3e05B172448dD8BF8DdC32)
 - Spark Diamond PAU Beacon: [`0x7ac96180C4d6b2A328D3a19ac059D0E7Fc3C6d41`](https://basescan.org/address/0x7ac96180C4d6b2A328D3a19ac059D0E7Fc3C6d41)
-
-#### Base — Scope 2
-
 - PAU Factory: [`0x011A115b5498B85b3d12245A3a7296F77325B5C3`](https://basescan.org/address/0x011A115b5498B85b3d12245A3a7296F77325B5C3)
 - PAU Administered Agent Factory: [`0xD711DbfD937a45e2C89CA0D4781cfa5BAb32e752`](https://basescan.org/address/0xD711DbfD937a45e2C89CA0D4781cfa5BAb32e752)
 
