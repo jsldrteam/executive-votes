@@ -40,7 +40,7 @@ If this executive proposal does not pass within 30 days, then it will expire and
 - **Authorization**: [Sky Atlas](https://sky-atlas.io/#0d0e2e1a-0502-4ee3-bc9d-8bd8ddde19ec)
 - **Proposal**: [PSM-GUSD-A and PSM-PAX-A Housekeeping](https://forum.skyeco.com/t/psm-gusd-a-and-psm-pax-a-housekeeping/28373)
 
-If this executive proposal passes, then the offboarding of the `PSM-GUSD-A` and `PSM-PAX-A` Peg Stability Modules will be finalized through the following actions.
+If this executive proposal passes, then the offboarding of the `PSM-GUSD-A` and `PSM-PAX-A` PSMs will be finalized through the following actions.
 
 #### PSM-GUSD-A
 
