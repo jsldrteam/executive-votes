@@ -210,7 +210,7 @@ The Pull Request for the Grove proxy spell can be viewed [here](https://github.c
 - **Authorization**: [Grove Snapshot Poll](https://snapshot.box/#/s:grovefinance.eth/proposal/0xa813ec78cae204f323f891b6dccdba89a6a74fb76cb612a63cd96d5332efacdb)
 - **Proposal**: [Prime Technical Scope](https://forum.skyeco.com/t/november-5-2026-proposed-changes-to-grove-for-upcoming-spell/28336)
 
-If this executive proposal passes, then the Grove proxy spell will increase the deposit rate limit for the [Grove x Steakhouse USDC Morpho Vault V2 on Ethereum](https://etherscan.io/address/0xBeefF08dF54897e7544aB01d0e86f013DA354111) with the following [rate limits](https://sky-atlas.io/#8efb0a11-b798-48eb-af19-f65b38f039b5):
+If this executive proposal passes, then the Grove proxy spell will increase the deposit rate limit for the [Grove x Steakhouse USDC Morpho Vault v2 on Ethereum](https://etherscan.io/address/0xBeefF08dF54897e7544aB01d0e86f013DA354111) with the following [rate limits](https://sky-atlas.io/#8efb0a11-b798-48eb-af19-f65b38f039b5):
 
 - Deposit rate limit (`LIMIT_4626_DEPOSIT`):
   - `maxAmount`: **100 million USDC**
