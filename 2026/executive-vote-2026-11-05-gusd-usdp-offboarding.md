@@ -77,7 +77,7 @@ Following these changes, the Chainlog version will be updated from `1.20.21` to 
 - **Authorization**: [Sky Governance Poll](https://vote.sky.money/polling/QmYNuyHd)
 - **Proposal**: [November 5, 2026 - Skybase Foundation Grant: 900,000 USDS SubProxy Transfer](https://forum.skyeco.com/t/november-5-2026-skybase-foundation-grant-900-000-usds-subproxy-transfer/28359)
 
-If this executive proposal passes, then `SUBPROXY_METHODS` will be used to transfer **900,000 USDS** from [`SKYBASE_SUBPROXY`](https://etherscan.io/address/0x08978E3700859E476201c1D7438B3427e3C81140) to the [Skybase Foundation Operational Multisig](https://etherscan.io/address/0x58B945c8Ce34BD8cEA3Fc0437626F9F87d58A621).
+If this executive proposal passes, then [`SUBPROXY_METHODS`](https://etherscan.io/address/0x5162489F4FEa651b76c75193387d08aAAC9CB52C) will be used to transfer **900,000 USDS** from [`SKYBASE_SUBPROXY`](https://etherscan.io/address/0x08978E3700859E476201c1D7438B3427e3C81140) to the [Skybase Foundation Operational Multisig](https://etherscan.io/address/0x58B945c8Ce34BD8cEA3Fc0437626F9F87d58A621).
 
 The transfer uses existing funds held by the Skybase SubProxy; it does not mint new USDS debt.
 
