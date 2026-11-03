@@ -7,7 +7,7 @@ address: "$spell_address"
 
 # [Executive Proposal] Finalize GUSD and USDP PSM Offboarding, Skybase Foundation Grant, Adjust Spark DC-IAM Parameters, Update Safe Harbor Agreement, Prime Agent Proxy Spells - November 5, 2026
 
-The Core Facilitators, StrongStrawberry, BurningBanana, and Pedro have placed an executive proposal into the voting system. SKY holders should vote for this proposal if they support the following alterations to the Sky Protocol.
+The Core Facilitators, Sidestream, and Dewiz have placed an executive proposal into the voting system. SKY holders should vote for this proposal if they support the following alterations to the Sky Protocol.
 
 If you are new to voting in the Sky Protocol, please see the [voting guide](https://manual.makerdao.com/governance/voting-in-makerdao/on-chain-governance) to learn how voting works.
 
