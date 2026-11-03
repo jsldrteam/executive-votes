@@ -115,7 +115,7 @@ If this executive proposal passes, then the Safe Harbor Agreement will be update
 
 If this executive proposal passes, then the Spark proxy spell with address [`0x9C3991A36aE899c7b267208bad2cC1237BE36F5b`](https://etherscan.io/address/0x9C3991A36aE899c7b267208bad2cC1237BE36F5b) and codehash `0x084497cc546ef29a5597591d820a3342a0b7687bcbd6fed504830f915a4422d9` will be whitelisted in the [Spark StarGuard](https://etherscan.io/address/0x6605aa120fe8b656482903E7757BaBF56947E45E).
 
-The Grove proxy spell with address [`0xb7fdd2f1efE69EC2145A914bCEB23D48de4Bb74D`](https://etherscan.io/address/0xb7fdd2f1efE69EC2145A914bCEB23D48de4Bb74D) and codehash `0x205f19d44421f601f530310481a88bbd037f1d114e82e9cd5d82ccf828b45ee3` will be whitelisted in the [Grove StarGuard](https://etherscan.io/address/0xfc51CAa049E8894bEcFfB68c61095C3F3Ec8a880).
+If this executive proposal passes, then the Grove proxy spell with address [`0xb7fdd2f1efE69EC2145A914bCEB23D48de4Bb74D`](https://etherscan.io/address/0xb7fdd2f1efE69EC2145A914bCEB23D48de4Bb74D) and codehash `0x205f19d44421f601f530310481a88bbd037f1d114e82e9cd5d82ccf828b45ee3` will be whitelisted in the [Grove StarGuard](https://etherscan.io/address/0xfc51CAa049E8894bEcFfB68c61095C3F3Ec8a880).
 
 #### Spark Proxy Spell
 
