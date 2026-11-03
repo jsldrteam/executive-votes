@@ -37,11 +37,40 @@ If this executive proposal does not pass within 30 days, then it will expire and
 
 ### Finalize GUSD and USDP PSM Offboarding
 
-If this executive proposal passes, then the offboarding of the following Peg Stability Modules will be finalized:
+- **Authorization**: [Sky Atlas](https://sky-atlas.io/#0d0e2e1a-0502-4ee3-bc9d-8bd8ddde19ec)
+- **Proposal**: [PSM-GUSD-A and PSM-PAX-A Housekeeping](https://forum.skyeco.com/t/psm-gusd-a-and-psm-pax-a-housekeeping/28373)
 
-- `PSM-GUSD-A` (GUSD).
-- `PSM-PAX-A` (USDP).
+If this executive proposal passes, then the offboarding of the `PSM-GUSD-A` and `PSM-PAX-A` Peg Stability Modules will be finalized through the following actions.
 
+#### PSM-GUSD-A
+
+- Write off any remaining debt associated with the `PSM-GUSD-A` PSM position through the Vat, with the residual debt accounted for in the Vow.
+- Remove `PSM-GUSD-A` from the Ilk Registry and `LINE_MOM`.
+- Cage `MCD_JOIN_PSM_GUSD_A` and revoke its authorization on the Vat.
+- Revoke the `MCD_CLIP_PSM_GUSD_A` Clipper's authorizations on the Vat and Dog.
+- Remove the following entries from the Chainlog:
+  - `MCD_PSM_GUSD_A`
+  - `MCD_JOIN_PSM_GUSD_A`
+  - `MCD_CLIP_PSM_GUSD_A`
+  - `MCD_CLIP_CALC_PSM_GUSD_A`
+  - `MCD_PSM_GUSD_A_JAR`
+  - `MCD_PSM_GUSD_A_INPUT_CONDUIT_JAR`
+
+#### PSM-PAX-A (USDP)
+
+- Write off any remaining debt associated with the `PSM-PAX-A` PSM position through the Vat, with the residual debt accounted for in the Vow.
+- Remove `PSM-PAX-A` from the Ilk Registry and `LINE_MOM`.
+- Cage `MCD_JOIN_PSM_PAX_A` and revoke its authorization on the Vat.
+- Revoke the `MCD_CLIP_PSM_PAX_A` Clipper's authorizations on the Vat and Dog.
+- Remove the following entries from the Chainlog:
+  - `MCD_PSM_PAX_A`
+  - `MCD_JOIN_PSM_PAX_A`
+  - `MCD_CLIP_PSM_PAX_A`
+  - `MCD_CLIP_CALC_PSM_PAX_A`
+  - `MCD_PSM_PAX_A_JAR`
+  - `MCD_PSM_PAX_A_INPUT_CONDUIT_JAR`
+
+Following these changes, the Chainlog version will be updated from `1.20.21` to `1.20.22`.
 ### Skybase Foundation Grant
 
 - **Authorization**: [Sky Governance Poll](https://vote.sky.money/polling/QmYNuyHd)
