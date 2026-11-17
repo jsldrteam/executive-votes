@@ -112,6 +112,8 @@ If this executive proposal passes, then Core Vaults will have their Debt Ceiling
 - Remove WSTETH-B from the DC-IAM.
 - Set WSTETH-B Debt Ceiling to **0 USDS**.
 
+Global Debt Ceiling will be reduced to account for the removals from the DC-IAM. This reduction will be offset by the remaining debt remaining in each ilk at the point of execution of the spell to ensure sufficient headroom remains.
+
 ### Finalize Legacy USDC PSM Offboarding
 
 - **Authorization**: [Sky Atlas](https://sky-atlas.io/#0d0e2e1a-0502-4ee3-bc9d-8bd8ddde19ec)
