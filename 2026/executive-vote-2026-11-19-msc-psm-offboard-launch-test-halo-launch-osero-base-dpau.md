@@ -242,7 +242,7 @@ If this executive proposal passes, then the Spark proxy spell will execute the f
 
 ##### [Avalanche] Spark Savings and Spark Liquidity Layer - Deprecate Avalanche
 
-- **Authorization**: [Spark Snapshot Poll](https://snapshot.org/#/s:sparkfi.eth/proposal/0xf1426e0ea2fcab571a5d59e650b24a88f56c041efe8ddc31d22a9d354dd57f97)
+- **Authorization**: [Spark Snapshot Poll 1](https://snapshot.org/#/s:sparkfi.eth/proposal/0xf1426e0ea2fcab571a5d59e650b24a88f56c041efe8ddc31d22a9d354dd57f97), [Spark Snapshot Poll 2](https://snapshot.org/#/s:sparkfi.eth/proposal/0x38093a3ead044a60511d1451ae04d0768e65b4ac32e19069c4d78335b64df61d)
 - **Proposal**: [Prime Technical Scope](https://forum.skyeco.com/t/november-19-2026-proposed-changes-to-spark-for-upcoming-spell/28390)
 
 If this executive proposal passes, then the Spark proxy spell will deprecate the Spark Liquidity Layer on Avalanche. This will include:
@@ -253,7 +253,7 @@ If this executive proposal passes, then the Spark proxy spell will deprecate the
 
 ##### [OP Mainnet] Spark Liquidity Layer - Deprecate the Spark Liquidity Layer on OP Mainnet
 
-- **Authorization**: [Spark Snapshot Poll](https://snapshot.org/#/s:sparkfi.eth/proposal/0x61efe7dcaadc2baf6b0dde519ceb3e360f7ac864c888004108d97012843246ed)
+- **Authorization**: [Spark Snapshot Poll 1](https://snapshot.org/#/s:sparkfi.eth/proposal/0x61efe7dcaadc2baf6b0dde519ceb3e360f7ac864c888004108d97012843246ed), [Spark Snapshot Poll 2](https://snapshot.org/#/s:sparkfi.eth/proposal/0x38093a3ead044a60511d1451ae04d0768e65b4ac32e19069c4d78335b64df61d)
 - **Proposal**: [Prime Technical Scope](https://forum.skyeco.com/t/november-19-2026-proposed-changes-to-spark-for-upcoming-spell/28390)
 
 If this executive proposal passes, then the Spark proxy spell will deprecate the Spark Liquidity Layer on OP Mainnet. This will include:
@@ -263,7 +263,7 @@ If this executive proposal passes, then the Spark proxy spell will deprecate the
 
 ##### [Unichain] Spark Liquidity Layer - Deprecate the Spark Liquidity Layer on Unichain
 
-- **Authorization**: [Spark Snapshot Poll](https://snapshot.org/#/s:sparkfi.eth/proposal/0x4ca8fbf47c4679aa74d3cd6681c89ced9383e9f923b7dc6f33c94f7f8f0cee5b)
+- **Authorization**: [Spark Snapshot Poll 1](https://snapshot.org/#/s:sparkfi.eth/proposal/0x4ca8fbf47c4679aa74d3cd6681c89ced9383e9f923b7dc6f33c94f7f8f0cee5b), [Spark Snapshot Poll 2](https://snapshot.org/#/s:sparkfi.eth/proposal/0x38093a3ead044a60511d1451ae04d0768e65b4ac32e19069c4d78335b64df61d)
 - **Proposal**: [Prime Technical Scope](https://forum.skyeco.com/t/november-19-2026-proposed-changes-to-spark-for-upcoming-spell/28390)
 
 If this executive proposal passes, then the Spark proxy spell will deprecate the Spark Liquidity Layer on Unichain.
