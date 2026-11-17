@@ -48,30 +48,30 @@ If this executive proposal passes, then the Monthly Settlement Cycle for October
 #### Spark
 
 - Mint **14,048,690 USDS** debt in `ALLOCATOR-SPARK-A` and transfer the amount to the Surplus Buffer.
-- Send **4,188,099 USDS** from the Surplus Buffer to the [SPARK_SUBPROXY](https://etherscan.io/address/0x3300f198988e4C9C63F75dF86De36421f06af8c4).
+- Send **4,188,099 USDS** from the Surplus Buffer to the [`SPARK_SUBPROXY`](https://etherscan.io/address/0x3300f198988e4C9C63F75dF86De36421f06af8c4).
 
 #### Grove
 
 - Mint **8,866,792 USDS** debt in `ALLOCATOR-BLOOM-A` and transfer the amount to the Surplus Buffer.
-- Send **2,170,826 USDS** from the Surplus Buffer to the [GROVE_SUBPROXY](https://etherscan.io/address/0x1369f7b2b38c76B6478c0f0E66D94923421891Ba).
+- Send **2,170,826 USDS** from the Surplus Buffer to the [`GROVE_SUBPROXY`](https://etherscan.io/address/0x1369f7b2b38c76B6478c0f0E66D94923421891Ba).
 
 #### Keel
 
-- Send **34,034 USDS** from the Surplus Buffer to the [KEEL_SUBPROXY](https://etherscan.io/address/0x355CD90Ecb1b409Fdf8b64c4473C3B858dA2c310).
+- Send **34,034 USDS** from the Surplus Buffer to the [`KEEL_SUBPROXY`](https://etherscan.io/address/0x355CD90Ecb1b409Fdf8b64c4473C3B858dA2c310).
 
 #### Obex
 
 - Mint **1,463,217 USDS** debt in `ALLOCATOR-OBEX-A` and transfer the amount to the Surplus Buffer.
-- Send **205,907 USDS** from the Surplus Buffer to the [OBEX_SUBPROXY](https://etherscan.io/address/0x8be042581f581E3620e29F213EA8b94afA1C8071).
+- Send **205,907 USDS** from the Surplus Buffer to the [`OBEX_SUBPROXY`](https://etherscan.io/address/0x8be042581f581E3620e29F213EA8b94afA1C8071).
 
 #### Skybase
 
-- Send **145,439 USDS** from the Surplus Buffer to the [SKYBASE_SUBPROXY](https://etherscan.io/address/0x08978E3700859E476201c1D7438B3427e3C81140).
+- Send **145,439 USDS** from the Surplus Buffer to the [`SKYBASE_SUBPROXY`](https://etherscan.io/address/0x08978E3700859E476201c1D7438B3427e3C81140).
 
 #### Osero
 
 - Mint **15,812 USDS** debt in `ALLOCATOR-PRYSM-A` and transfer the amount to the Surplus Buffer.
-- Send **42,396 USDS** from the Surplus Buffer to the [OSERO_SUBPROXY](https://etherscan.io/address/0x24fdcd3bFA5C2553e05B2f9AD0365EBC296278D3).
+- Send **42,396 USDS** from the Surplus Buffer to the [`OSERO_SUBPROXY`](https://etherscan.io/address/0x24fdcd3bFA5C2553e05B2f9AD0365EBC296278D3).
 
 #### Demand Side Buffer Replenishment
 
@@ -84,7 +84,7 @@ If this executive proposal passes, then the Monthly Settlement Cycle for October
 
 If this executive proposal passes, then Treasury Management Function configurations will be updated through the following actions:
 
-- Transfer **3,720,082 USDS** from the Surplus Buffer to the [Core Council Buffer](https://etherscan.io/address/0x210CFcF53d1f9648C1c4dcaEE677f0Cb06914364).
+- Transfer **3,720,082 USDS** from the Surplus Buffer to the [Core Council Buffer](https://etherscan.io/address/0x210CFcF53d1f9648C1c4dcaEE677f0Cb06914364). This amount represents **1,860,041 USDS** allocated to the Core Council and **1,860,041 USDS** allocated to the Fortification Foundation, combined into a single transfer.
 - Burn **7,770,211 SKY** from the [Pause Proxy](https://etherscan.io/address/0xBE8E3e3618f7474F8cB1d074A26afFef007E98FB) balance.
 - Update the LSSKY->SKY farm vest by calling [`TreasuryFundedFarmingInit.updateFarmVest()`](https://github.com/sky-ecosystem/endgame-toolkit/blob/master/script/dependencies/treasury-funded-farms/TreasuryFundedFarmingInit.sol#L128) with the following parameters:
   - `dist`: [`0x675671A8756dDb69F7254AFB030865388Ef699Ee`](https://etherscan.io/address/0x675671A8756dDb69F7254AFB030865388Ef699Ee)
@@ -101,15 +101,15 @@ If this executive proposal passes, then Treasury Management Function configurati
 
 If this executive proposal passes, then Core Vaults will have their Debt Ceiling Instant Access Module (DC-IAM) and debt ceiling parameters adjusted as follows:
 
-- Remove ETH-A from the DC-IAM
+- Remove ETH-A from the DC-IAM.
 - Set ETH-A Debt Ceiling to **0 USDS**.
-- Remove ETH-B from the DC-IAM
+- Remove ETH-B from the DC-IAM.
 - Set ETH-B Debt Ceiling to **0 USDS**.
-- Remove ETH-C from the DC-IAM
+- Remove ETH-C from the DC-IAM.
 - Set ETH-C Debt Ceiling to **0 USDS**.
-- Remove WSTETH-A from the DC-IAM
+- Remove WSTETH-A from the DC-IAM.
 - Set WSTETH-A Debt Ceiling to **0 USDS**.
-- Remove WSTETH-B from the DC-IAM
+- Remove WSTETH-B from the DC-IAM.
 - Set WSTETH-B Debt Ceiling to **0 USDS**.
 
 ### Finalize Legacy USDC Peg Stability Module Offboarding
@@ -188,7 +188,7 @@ If this executive proposal passes, then the Beacon and Parallelized Allocation S
 
 - **Authorization**: [Atlas A.2.11.1.2.3](https://sky-atlas.io/#fcd868db-4a91-4ee0-baf5-1ebd40fc651e)
 
-If this executive proposal passes, the Safe Harbor agreement will be updated to include the following new contracts added by this spell:
+If this executive proposal passes, the Safe Harbor Agreement will be updated to include the following new contracts added by this spell:
 
 #### Ethereum Mainnet
 
@@ -425,7 +425,7 @@ If this executive proposal passes, then the Osero proxy spell will onboard the O
 - Withdrawals:
   - `maxAmount`: **Unlimited**
 
-##### [Base] Grant DEFAULT_ADMIN_ROLE on the Osero AccessControls on Base and on the Osero ALM Rate Limits contract on Base to the Configurator on Base
+##### [Base] Grant DEFAULT_ADMIN_ROLE on the Osero AccessControls on Base and on the Osero ALM Rate Limits Contract on Base to the Configurator on Base
 
 - **Authorization**: [Governance Poll 1657](https://vote.sky.money/polling/QmYWJPcE)
 - **Proposal**: [Prime Technical Scope](https://forum.skyeco.com/t/november-19-2026-proposed-changes-to-osero-for-upcoming-spell/28388)
