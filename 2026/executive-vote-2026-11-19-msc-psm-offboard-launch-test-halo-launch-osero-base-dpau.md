@@ -18,8 +18,8 @@ If you are new to voting in the Sky Protocol, please see the [voting guide](http
 If this executive proposal passes, the following **actions** will occur within the Sky Protocol:
 
 - The Monthly Settlement Cycle for October 2026 will be executed.
-- The Treasury Management Function will be executed, including burning SKY from the Pause Proxy, updating LSSKY->SKY staking rewards, and reducing the buyback and LSSKY->USDS reward cycles.
-- Core Vaults will be removed from the Debt Ceiling Instant Access Module and their debt ceilings will be set to 0.
+- The Treasury Management Function will be executed, including burning SKY from the Pause Proxy, updating LSSKY->SKY staking rewards, and shortening the buyback and LSSKY->USDS reward cycles.
+- Core Vaults will be removed from the Debt Ceiling Instant Access Module (DC-IAM) and their debt ceilings will be set to 0.
 - The offboarding of the legacy USDC Peg Stability Module (PSM) will be finalized.
 - A test Halo controlled by Sky Core will be initialized.
 - The Beacon and Parallelized Allocation System (PAS) on Base will be configured for Osero's Diamond Parallelized Allocation Unit (DPAU) launch on Base.
@@ -73,9 +73,9 @@ If this executive proposal passes, then the Monthly Settlement Cycle for October
 - Mint **15,812 USDS** debt in `ALLOCATOR-PRYSM-A` and transfer the amount to the Surplus Buffer.
 - Send **42,396 USDS** from the Surplus Buffer to the [`OSERO_SUBPROXY`](https://etherscan.io/address/0x24fdcd3bFA5C2553e05B2f9AD0365EBC296278D3).
 
-#### Demand Side Buffer Replenishment
+#### Demand Side Buffer Top-Up
 
-- Send **1,000,000 USDS** from the Surplus Buffer to the Demand Side Buffer [0x5e2fEc3a3C4E63A422e45C1BB83EdB3a5aD0543B](https://etherscan.io/address/0x5e2fEc3a3C4E63A422e45C1BB83EdB3a5aD0543B).
+- Send **1,000,000 USDS** from the Surplus Buffer to the Demand Side Buffer at [0x5e2fEc3a3C4E63A422e45C1BB83EdB3a5aD0543B](https://etherscan.io/address/0x5e2fEc3a3C4E63A422e45C1BB83EdB3a5aD0543B).
 
 ### Treasury Management Function
 
@@ -99,7 +99,7 @@ If this executive proposal passes, then Treasury Management Function configurati
 - **Authorization**: [Sky Atlas](https://sky-atlas.io/#2107f160-751d-4fea-abc0-f0bef76a30d5)
 - **Proposal**: [Forum Post](https://forum.skyeco.com/t/core-vaults-parameter-changes-set-dc-iam-line-to-0-on-eth-a-eth-b-eth-c-wsteth-a-and-wsteth-b/28399)
 
-If this executive proposal passes, then Core Vaults will have their Debt Ceiling Instant Access Module (DC-IAM) and debt ceiling parameters adjusted as follows:
+If this executive proposal passes, then Core Vaults will have their DC-IAM and debt ceiling parameters adjusted as follows:
 
 - Remove ETH-A from the DC-IAM.
 - Set ETH-A Debt Ceiling to **0 USDS**.
@@ -112,7 +112,7 @@ If this executive proposal passes, then Core Vaults will have their Debt Ceiling
 - Remove WSTETH-B from the DC-IAM.
 - Set WSTETH-B Debt Ceiling to **0 USDS**.
 
-Global Debt Ceiling will be reduced to account for the removals from the DC-IAM. This reduction will be offset by the remaining debt remaining in each ilk at the point of execution of the spell to ensure sufficient headroom remains.
+Global Debt Ceiling will be reduced to account for the removals from the DC-IAM. This reduction will be offset by the debt remaining in each ilk at the point of execution of the spell to ensure sufficient headroom remains.
 
 ### Finalize Legacy USDC PSM Offboarding
 
@@ -249,7 +249,7 @@ If this executive proposal passes, then the Spark proxy spell will execute the f
 
 If this executive proposal passes, then the Spark proxy spell will deprecate the Spark Liquidity Layer on Avalanche. This will include:
 
-- setting spUSDC deposit cap to zero
+- setting the spUSDC deposit cap to zero
 - fixing the spUSDC rate at 0%
 - setting the spUSDC take rate limit to zero
 - zeroing the CCTP limits
@@ -285,7 +285,7 @@ If this executive proposal passes, then the Spark proxy spell will onboard the S
 - Set rate limits for the Morpho USDC vault on X-Layer at [0xDb6C283f8026a2D1D69b90464011baFB0A1090F4](https://www.oklink.com/xlayer/address/0xDb6C283f8026a2D1D69b90464011baFB0A1090F4).
   - Deposit:
     - `maxAmount`: **15 million USDC**
-    - `slope`: **10 million USDC/day**
+    - `slope`: **10 million USDC per day**
   - Withdraw:
     - `maxAmount`: **Unlimited**
   - Maximum Exchange Rate:
@@ -327,7 +327,7 @@ If this executive proposal passes, then the Grove proxy spell will set the follo
 - **Authorization**: [Grove Snapshot Poll](https://snapshot.box/#/s:grovefinance.eth/proposal/0x6b470d2a31a6e1723376a35691a551c521739d85f9f55672793857405cab88a5)
 - **Proposal**: [Prime Technical Scope](https://forum.skyeco.com/t/november-19-2026-proposed-changes-to-grove-for-upcoming-spell/28387)
 
-If this executive proposal passes, then the Grove proxy spell will transfer **300,000 USDS** to the Grove Foundation multisig at [0xE3EC4CC359E68c9dCE15Bf667b1aD37Df54a5a42](https://etherscan.io/address/0xE3EC4CC359E68c9dCE15Bf667b1aD37Df54a5a42) for the purchase of GROVE tokens through FalconX.
+If this executive proposal passes, then the Grove proxy spell will transfer **300,000 USDS** to the Grove Foundation Multisig at [0xE3EC4CC359E68c9dCE15Bf667b1aD37Df54a5a42](https://etherscan.io/address/0xE3EC4CC359E68c9dCE15Bf667b1aD37Df54a5a42) for the purchase of GROVE tokens through FalconX.
 
 ##### [Ethereum + Base] Raise the Circle CCTP Transfer Rate Limits Between Ethereum and Base to 100,000,000 USDC
 
@@ -417,7 +417,7 @@ If this executive proposal passes, then the Osero proxy spell will configure tra
   - `recipient`: [Osero ALM Proxy on Ethereum Mainnet](https://etherscan.io/address/0x6d370e359e9cbd0Fd35Bb38fAF705D84238CB884)
   - `minFeeCapRate`: **0**
   - `maxFeeCapRate`: **0**
-- Set the `LIMIT_USDC_TO_CCTP` rate limit on Base to **Unlimited**
+- Set the `LIMIT_USDC_TO_CCTP` rate limit on Base to **Unlimited**.
 - Set the `LIMIT_USDC_TO_DOMAIN` rate limit for Ethereum Mainnet on Base:
   - `maxAmount`: **10 million USDC**
   - `slope`: **50 million USDC per day**
