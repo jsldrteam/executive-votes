@@ -245,14 +245,21 @@ If this executive proposal passes, then the Spark proxy spell will execute the f
 - **Authorization**: [Spark Snapshot Poll](https://snapshot.org/#/s:sparkfi.eth/proposal/0xf1426e0ea2fcab571a5d59e650b24a88f56c041efe8ddc31d22a9d354dd57f97)
 - **Proposal**: [Prime Technical Scope](https://forum.skyeco.com/t/november-19-2026-proposed-changes-to-spark-for-upcoming-spell/28390)
 
-If this executive proposal passes, then the Spark proxy spell will deprecate the Spark Liquidity Layer on Avalanche.
+If this executive proposal passes, then the Spark proxy spell will deprecate the Spark Liquidity Layer on Avalanche. This will include:
+
+- setting spUSDC deposit cap to zero
+- fixing the spUSDC rate at 0%
+- zeroing the CCTP limits
 
 ##### [OP Mainnet] Spark Liquidity Layer - Deprecate the Spark Liquidity Layer on OP Mainnet
 
 - **Authorization**: [Spark Snapshot Poll](https://snapshot.org/#/s:sparkfi.eth/proposal/0x61efe7dcaadc2baf6b0dde519ceb3e360f7ac864c888004108d97012843246ed)
 - **Proposal**: [Prime Technical Scope](https://forum.skyeco.com/t/november-19-2026-proposed-changes-to-spark-for-upcoming-spell/28390)
 
-If this executive proposal passes, then the Spark proxy spell will deprecate the Spark Liquidity Layer on OP Mainnet.
+If this executive proposal passes, then the Spark proxy spell will deprecate the Spark Liquidity Layer on OP Mainnet. This will include:
+
+- returning remaining USDS and sUSDS to mainnet
+- setting all rate limits to zero
 
 ##### [Unichain] Spark Liquidity Layer - Deprecate the Spark Liquidity Layer on Unichain
 
@@ -260,6 +267,9 @@ If this executive proposal passes, then the Spark proxy spell will deprecate the
 - **Proposal**: [Prime Technical Scope](https://forum.skyeco.com/t/november-19-2026-proposed-changes-to-spark-for-upcoming-spell/28390)
 
 If this executive proposal passes, then the Spark proxy spell will deprecate the Spark Liquidity Layer on Unichain.
+
+- returning remaining USDS and sUSDS to mainnet
+- setting all rate limits to zero
 
 ##### [X-Layer] Spark Savings - Onboard the Spark-curated Morpho USDC Vault on X-Layer to the spUSDC PAU
 
