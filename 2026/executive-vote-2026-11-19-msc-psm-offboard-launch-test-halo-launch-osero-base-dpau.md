@@ -1,6 +1,6 @@
 ---
 title: Template - [Executive Vote] Monthly Settlement Cycle for October 2026, Treasury Management Function Execution, Core Vault Debt Ceiling Reductions, Legacy USDC PSM Offboarding, Test Halo Initialization, Osero Base DPAU Activation, Safe Harbor Agreement Update, Prime Agent Proxy Spells - November 19, 2026
-summary: Execute the Monthly Settlement Cycle for October 2026 and the associated token transfers, burn SKY from the Pause Proxy balance, update LSSKY->SKY staking rewards and shorten the buyback and LSSKY->USDS reward cycles, finalize offboarding the legacy USDC PSM, remove core vaults from the Debt Ceiling Instant Access Module and set their debt ceilings to 0, initialize a test Halo, perform the necessary configuration steps to activate the Osero DPAU on Base, update the Safe Harbor Agreement, whitelist proxy spells for Spark, Grove, and Osero.
+summary: Execute the Monthly Settlement Cycle for October 2026 and the associated token transfers, burn SKY from the Pause Proxy balance, update LSSKY->SKY staking rewards and shorten the buyback and LSSKY->USDS reward cycles, remove core vaults from the Debt Ceiling Instant Access Module and set their debt ceilings to 0, finalize offboarding the legacy USDC PSM, initialize a test Halo, perform the necessary configuration steps to activate the Osero DPAU on Base, update the Safe Harbor Agreement, whitelist proxy spells for Spark, Grove, and Osero.
 date: 2026-11-19T00:00:00.000Z
 address: "$spell_address"
 ---
@@ -21,7 +21,7 @@ If this executive proposal passes, the following **actions** will occur within t
 - The Treasury Management Function will be executed, including burning SKY from the Pause Proxy, updating LSSKY->SKY staking rewards, and reducing the buyback and LSSKY->USDS reward cycles.
 - Core Vaults will be removed from the Debt Ceiling Instant Access Module and their debt ceilings will be set to 0.
 - The offboarding of the legacy USDC PSM will be finalized.
-- A Test Halo controlled by Sky Core will be initalized.
+- A Test Halo controlled by Sky Core will be initialized.
 - The Beacon and PAS on Base will be configured for Osero's DPAU launch on Base.
 - The Safe Harbor Agreement will be updated.
 - Prime Agent proxy spells for Spark, Grove, and Osero will be whitelisted in their respective StarGuard modules.
@@ -43,39 +43,39 @@ If this executive proposal does not pass within 30 days, then it will expire and
 - **Authorization**: [Sky Atlas](https://sky-atlas.io/#6f8d5065-d6ff-4add-9a28-eadeffa7ed1a)
 - **Proposal**: [MSC #14 - Settlement Summary (October 2026)](https://forum.skyeco.com/t/msc-14-settlement-summary-october-2026/28406)
 
-If this executive proposal passes, then then the Monthly Settlement Cycle for October 2026 will be executed through the following actions:
+If this executive proposal passes, then the Monthly Settlement Cycle for October 2026 will be executed through the following actions:
 
 #### Spark
 
-- Mint **14,048,690 USDS** debt in `ALLOCATOR-SPARK-A` and transfer the amount to the surplus buffer.
-- Send **4,188,099 USDS** from the surplus buffer to the Spark Subproxy [0x3300f198988e4C9C63F75dF86De36421f06af8c4](https://etherscan.io/address/0x3300f198988e4C9C63F75dF86De36421f06af8c4).
+- Mint **14,048,690 USDS** debt in `ALLOCATOR-SPARK-A` and transfer the amount to the Surplus Buffer.
+- Send **4,188,099 USDS** from the Surplus Buffer to the [SPARK_SUBPROXY](https://etherscan.io/address/0x3300f198988e4C9C63F75dF86De36421f06af8c4).
 
 #### Grove
 
-- Mint **8,866,792 USDS** debt in `ALLOCATOR-BLOOM-A` and transfer the amount to the surplus buffer.
-- Send **2,170,826 USDS** from the surplus buffer to the Grove Subproxy [0x1369f7b2b38c76B6478c0f0E66D94923421891Ba](https://etherscan.io/address/0x1369f7b2b38c76B6478c0f0E66D94923421891Ba).
+- Mint **8,866,792 USDS** debt in `ALLOCATOR-BLOOM-A` and transfer the amount to the Surplus Buffer.
+- Send **2,170,826 USDS** from the Surplus Buffer to the [GROVE_SUBPROXY](https://etherscan.io/address/0x1369f7b2b38c76B6478c0f0E66D94923421891Ba).
 
 #### Keel
 
-- Send **34,034 USDS** from the surplus buffer to the Keel Subproxy [0x355CD90Ecb1b409Fdf8b64c4473C3B858dA2c310](https://etherscan.io/address/0x355CD90Ecb1b409Fdf8b64c4473C3B858dA2c310).
+- Send **34,034 USDS** from the Surplus Buffer to the [KEEL_SUBPROXY](https://etherscan.io/address/0x355CD90Ecb1b409Fdf8b64c4473C3B858dA2c310).
 
 #### Obex
 
-- Mint **1,463,217 USDS** debt in `ALLOCATOR-OBEX-A` and transfer the amount to the surplus buffer.
-- Send **205,907 USDS** from the surplus buffer to the Obex Subproxy [0x8be042581f581E3620e29F213EA8b94afA1C8071](https://etherscan.io/address/0x8be042581f581E3620e29F213EA8b94afA1C8071).
+- Mint **1,463,217 USDS** debt in `ALLOCATOR-OBEX-A` and transfer the amount to the Surplus Buffer.
+- Send **205,907 USDS** from the Surplus Buffer to the [OBEX_SUBPROXY](https://etherscan.io/address/0x8be042581f581E3620e29F213EA8b94afA1C8071).
 
 #### Skybase
 
-- Send **145,439 USDS** from the surplus buffer to the Skybase Subproxy [0x08978E3700859E476201c1D7438B3427e3C81140](https://etherscan.io/address/0x08978E3700859E476201c1D7438B3427e3C81140).
+- Send **145,439 USDS** from the Surplus Buffer to the [SKYBASE_SUBPROXY](https://etherscan.io/address/0x08978E3700859E476201c1D7438B3427e3C81140).
 
 #### Osero
 
-- Mint **15,812 USDS** debt in `ALLOCATOR-PRYSM-A` and transfer the amount to the surplus buffer.
-- Send **42,396 USDS** from the surplus buffer to the Osero Subproxy [0x24fdcd3bFA5C2553e05B2f9AD0365EBC296278D3](https://etherscan.io/address/0x24fdcd3bFA5C2553e05B2f9AD0365EBC296278D3).
+- Mint **15,812 USDS** debt in `ALLOCATOR-PRYSM-A` and transfer the amount to the Surplus Buffer.
+- Send **42,396 USDS** from the Surplus Buffer to the [OSERO_SUBPROXY](https://etherscan.io/address/0x24fdcd3bFA5C2553e05B2f9AD0365EBC296278D3).
 
 #### Demand Side Buffer Replenishment
 
-- Send `1,000,000 USDS` from the surplus buffer to the Demand Side Buffer [0x5e2fEc3a3C4E63A422e45C1BB83EdB3a5aD0543B](https://etherscan.io/address/0x5e2fEc3a3C4E63A422e45C1BB83EdB3a5aD0543B).
+- Send **1,000,000 USDS** from the Surplus Buffer to the Demand Side Buffer [0x5e2fEc3a3C4E63A422e45C1BB83EdB3a5aD0543B](https://etherscan.io/address/0x5e2fEc3a3C4E63A422e45C1BB83EdB3a5aD0543B).
 
 ### Treasury Management Function
 
@@ -84,7 +84,7 @@ If this executive proposal passes, then then the Monthly Settlement Cycle for Oc
 
 If this executive proposal passes, then Treasury Management Function configurations will be updated through the following actions:
 
-- Transfer **3,720,082 USDS** from the surplus buffer to the [Core Council Buffer](https://etherscan.io/address/0x210CFcF53d1f9648C1c4dcaEE677f0Cb06914364)
+- Transfer **3,720,082 USDS** from the Surplus Buffer to the [Core Council Buffer](https://etherscan.io/address/0x210CFcF53d1f9648C1c4dcaEE677f0Cb06914364).
 - Burn **7,770,211 SKY** from the [Pause Proxy](https://etherscan.io/address/0xBE8E3e3618f7474F8cB1d074A26afFef007E98FB) balance.
 - Update the LSSKY->SKY farm vest by calling [`TreasuryFundedFarmingInit.updateFarmVest()`](https://github.com/sky-ecosystem/endgame-toolkit/blob/master/script/dependencies/treasury-funded-farms/TreasuryFundedFarmingInit.sol#L128) with the following parameters:
   - `dist`: [`0x675671A8756dDb69F7254AFB030865388Ef699Ee`](https://etherscan.io/address/0x675671A8756dDb69F7254AFB030865388Ef699Ee)
@@ -119,15 +119,15 @@ If this executive proposal passes, then Core Vaults will have their Debt Ceiling
 
 If this executive proposal passes, then the offboarding of the legacy USDC Peg Stability Module (PSM), `PSM-USDC-A` will be finalized by the following actions:
 
-- Exit **99.328577** USDC on [`MCD_JOIN_PSM_USDC_A`](https://etherscan.io/address/0x0a59649758aa4d66e25f08dd01271e891fe52199) to the [Core Council Buffer](https://etherscan.io/address/0x210CFcF53d1f9648C1c4dcaEE677f0Cb06914364)
+- Exit **99.328577 USDC** on [`MCD_JOIN_PSM_USDC_A`](https://etherscan.io/address/0x0A59649758aa4d66E25f08Dd01271e891fe52199) to the [Core Council Buffer](https://etherscan.io/address/0x210CFcF53d1f9648C1c4dcaEE677f0Cb06914364)
 - Remove `PSM-USDC-A` from [`ILK_REGISTRY`](https://etherscan.io/address/0x5a464C28D19848f44199D003BeF5ecc87d090F87)
 - Remove `PSM-USDC-A` from [`LINE_MOM`](https://etherscan.io/address/0x9c257e5Aaf73d964aEBc2140CA38078988fB0C10)
-- Cage [`MCD_JOIN_PSM_USDC_A`](https://etherscan.io/address/0x0a59649758aa4d66e25f08dd01271e891fe52199)
-- Revoke the [`MCD_JOIN_PSM_USDC_A`](https://etherscan.io/address/0x0a59649758aa4d66e25f08dd01271e891fe52199) authorization on [`MCD_VAT`](https://etherscan.io/address/0x35D1b3F3D7966A1DFe207aa4514C12a259A0492B)
+- Cage [`MCD_JOIN_PSM_USDC_A`](https://etherscan.io/address/0x0A59649758aa4d66E25f08Dd01271e891fe52199)
+- Revoke the [`MCD_JOIN_PSM_USDC_A`](https://etherscan.io/address/0x0A59649758aa4d66E25f08Dd01271e891fe52199) authorization on [`MCD_VAT`](https://etherscan.io/address/0x35D1b3F3D7966A1DFe207aa4514C12a259A0492B)
 - Revoke the [`MCD_CLIP_PSM_USDC_A`](https://etherscan.io/address/0x66609b4799fd7cE12BA799AD01094aBD13d5014D) authorization on [`MCD_VAT`](https://etherscan.io/address/0x35D1b3F3D7966A1DFe207aa4514C12a259A0492B) and [`MCD_DOG`](https://etherscan.io/address/0x135954d155898D42C90D2a57824C690e0c7BEf1B)
 - Remove `PSM-USDC-A` related addresses from [chainlog](https://chainlog.skyeco.com):
-  - Remove [`MCD_PSM_USDC_A`](https://etherscan.io/address/0x89B78CfA322F6C5dE0aBcEecab66Aee45393cC5A)from the [chainlog](https://chainlog.skyeco.com)
-  - Remove [`MCD_JOIN_PSM_USDC_A`](https://etherscan.io/address/0x0a59649758aa4d66e25f08dd01271e891fe52199) from the [chainlog](https://chainlog.skyeco.com)
+  - Remove [`MCD_PSM_USDC_A`](https://etherscan.io/address/0x89B78CfA322F6C5dE0aBcEecab66Aee45393cC5A) from the [chainlog](https://chainlog.skyeco.com)
+  - Remove [`MCD_JOIN_PSM_USDC_A`](https://etherscan.io/address/0x0A59649758aa4d66E25f08Dd01271e891fe52199) from the [chainlog](https://chainlog.skyeco.com)
   - Remove [`MCD_CLIP_PSM_USDC_A`](https://etherscan.io/address/0x66609b4799fd7cE12BA799AD01094aBD13d5014D) from the [chainlog](https://chainlog.skyeco.com)
   - Remove [`MCD_CLIP_CALC_PSM_USDC_A`](https://etherscan.io/address/0xbeE028b5Fa9eb0aDAC5eeF7E5B13383172b91A4E) from the [chainlog](https://chainlog.skyeco.com)
 
@@ -148,29 +148,29 @@ If this executive proposal passes, then a new Test Halo SubProxy and StarGuard w
 - Call [CRON_STARGUARD_JOB.add](https://github.com/sky-ecosystem/dss-cron/blob/acec225fcbc5fb90bb2ad7d1092091785b888bdf/src/StarGuardJob.sol#L150-L153) with:
   - `starGuard`: [**0x5dc7A3700Dc0508f5E127FA23acd83cc2E1D6056**](https://etherscan.io/address/0x5dc7A3700Dc0508f5E127FA23acd83cc2E1D6056)
 
-### [Base] Configure the Beacon and PAS for Osero’s DPAU Launch
+### [Base] Configure the Beacon and PAS for Osero's DPAU Launch
 
 - **Authorization**: [Sky Atlas](https://sky-atlas.io/#24c2fc14-448d-48be-a416-86bfad6f33fe)
 - **Proposal**: [Technical Scope](https://forum.skyeco.com/t/technical-scope-of-the-core-l2-spell-on-base-assisting-osero-s-dpau-launch/28413)
 
-If this executive proposal passes, then the Beacon and Parallelized Allocation System (PAS) on Base will be configured to enable activation of Osero's Diamond Parallelized Allocation Unit (DPAU). This changes will be executed using a reuseable L2MulticallSpell at [0x682048513247076Fb5dB4762121BdB136182e4A9](https://basescan.org/address/0x682048513247076Fb5dB4762121BdB136182e4A9) through the following actions:
+If this executive proposal passes, then the Beacon and Parallelized Allocation System (PAS) on Base will be configured to enable activation of Osero's Diamond Parallelized Allocation Unit (DPAU). These changes will be executed using a reusable L2MulticallSpell at [0x682048513247076Fb5dB4762121BdB136182e4A9](https://basescan.org/address/0x682048513247076Fb5dB4762121BdB136182e4A9) through the following actions:
 
 - Add ERC4626Facet to the Beacon via [Beacon.setIntegration](https://github.com/sky-ecosystem/diamond-pau/blob/a84fe9616412e3b6d10ea64301a3481f7dcf9a05/src/Beacon.sol#L49-L67) with:
   - `Beacon`: [**0x7ac96180C4d6b2A328D3a19ac059D0E7Fc3C6d41**](https://basescan.org/address/0x7ac96180C4d6b2A328D3a19ac059D0E7Fc3C6d41)
   - `id`: **ERC4626_FACET**
   - `config.facet`: [**0xC6Fb54348feCdb2790Fa9130D1fc35d6E101C97D**](https://basescan.org/address/0xC6Fb54348feCdb2790Fa9130D1fc35d6E101C97D)
-  - `config.Wires`: an array directly fetched from the mainnet Beacon.
+  - `config.wires`: an array directly fetched from the mainnet Beacon.
 - Add cBEAM to PAS via [BeamState.addCBeam](https://github.com/sky-ecosystem/pas/blob/5263f26010d6543c7a95b3b2a94533e456af1911/src/BeamState.sol#L210-L213) with:
   - `BeamState`: [**0x29840a8519013F483d94781b5C1671b552A109e1**](https://basescan.org/address/0x29840a8519013F483d94781b5C1671b552A109e1)
   - `cBeam`: [**0x42D1038017E466b413aa44Ae798E30FB80b2E180**](https://basescan.org/address/0x42D1038017E466b413aa44Ae798E30FB80b2E180)
 - Add Osero's RateLimits to PAS via [BeamState.addRateLimits](https://github.com/sky-ecosystem/pas/blob/5263f26010d6543c7a95b3b2a94533e456af1911/src/BeamState.sol#L186-L189) with:
   - `BeamState`: [**0x29840a8519013F483d94781b5C1671b552A109e1**](https://basescan.org/address/0x29840a8519013F483d94781b5C1671b552A109e1)
   - `rateLimits_`: [**0xd9E629588c48722E4c1bfcfb17829FecAf73839f**](https://basescan.org/address/0xd9E629588c48722E4c1bfcfb17829FecAf73839f)
-- Add cBEAM for Osero’s RateLimits via [BeamState.setCBeamForRateLimits](https://github.com/sky-ecosystem/pas/blob/5263f26010d6543c7a95b3b2a94533e456af1911/src/BeamState.sol#L225-L230) with:
+- Add cBEAM for Osero's RateLimits via [BeamState.setCBeamForRateLimits](https://github.com/sky-ecosystem/pas/blob/5263f26010d6543c7a95b3b2a94533e456af1911/src/BeamState.sol#L225-L230) with:
   - `BeamState`: [**0x29840a8519013F483d94781b5C1671b552A109e1**](https://basescan.org/address/0x29840a8519013F483d94781b5C1671b552A109e1)
   - `rateLimits_`: [**0xd9E629588c48722E4c1bfcfb17829FecAf73839f**](https://basescan.org/address/0xd9E629588c48722E4c1bfcfb17829FecAf73839f)
   - `cBeam`: [**0x42D1038017E466b413aa44Ae798E30FB80b2E180**](https://basescan.org/address/0x42D1038017E466b413aa44Ae798E30FB80b2E180)
-- Add Osero’s Controller to PAS via [BeamState.addController](https://github.com/sky-ecosystem/pas/blob/5263f26010d6543c7a95b3b2a94533e456af1911/src/BeamState.sol#L198-L201) with:
+- Add Osero's Controller to PAS via [BeamState.addController](https://github.com/sky-ecosystem/pas/blob/5263f26010d6543c7a95b3b2a94533e456af1911/src/BeamState.sol#L198-L201) with:
   - `BeamState`: [**0x29840a8519013F483d94781b5C1671b552A109e1**](https://basescan.org/address/0x29840a8519013F483d94781b5C1671b552A109e1)
   - `controller`: [**0x96F18963c1B1Dd83bB4D14119cF2C4b94F86d6a9**](https://basescan.org/address/0x96F18963c1B1Dd83bB4D14119cF2C4b94F86d6a9)
 - Add cBEAM for Osero’s Controller via [BeamState.setCBeamForController](https://github.com/sky-ecosystem/pas/blob/5263f26010d6543c7a95b3b2a94533e456af1911/src/BeamState.sol#L237-L242) with:
@@ -192,13 +192,13 @@ If this executive proposal passes, the Safe Harbor agreement will be updated to 
 
 #### Ethereum Mainnet
 
-- [TEST_HALO_SUBPROXY](https://etherscan.io/address/0xF12Be1673758f8fBC275755401774Ec45C80c0F0)
-- [TEST_HALO_STARGUARD](https://etherscan.io/address/0x5dc7A3700Dc0508f5E127FA23acd83cc2E1D6056)
+- `TEST_HALO_SUBPROXY`: [0xF12Be1673758f8fBC275755401774Ec45C80c0F0](https://etherscan.io/address/0xF12Be1673758f8fBC275755401774Ec45C80c0F0)
+- `TEST_HALO_STARGUARD`: [0x5dc7A3700Dc0508f5E127FA23acd83cc2E1D6056](https://etherscan.io/address/0x5dc7A3700Dc0508f5E127FA23acd83cc2E1D6056)
 
 #### Base
 
-- [L2_ERC4626_FACET](https://basescan.org/address/0xC6Fb54348feCdb2790Fa9130D1fc35d6E101C97D)
-- [L2_MULTICALL_SPELL](https://basescan.org/address/0x682048513247076Fb5dB4762121BdB136182e4A9)
+- `L2_ERC4626_FACET`: [0xC6Fb54348feCdb2790Fa9130D1fc35d6E101C97D](https://basescan.org/address/0xC6Fb54348feCdb2790Fa9130D1fc35d6E101C97D)
+- `L2_MULTICALL_SPELL`: [0x682048513247076Fb5dB4762121BdB136182e4A9](https://basescan.org/address/0x682048513247076Fb5dB4762121BdB136182e4A9)
 
 ### Prime Agent Proxy Spells
 
@@ -238,7 +238,7 @@ If this executive proposal passes, then the Spark proxy spell will claim accrued
 If this executive proposal passes, then the Spark proxy spell will execute the following grant transfers:
 
 - Transfer **865,000 USDS** to the Spark Foundation at [**0x92e4629a4510AF5819d7D1601464C233599fF5ec**](https://etherscan.io/address/0x92e4629a4510AF5819d7D1601464C233599fF5ec)
-- Trasfer **45,000 USDS** to the Spark Assets Foundation at [**0xEabCb8C0346Ac072437362f1692706BA5768A911**](https://etherscan.io/address/0xEabCb8C0346Ac072437362f1692706BA5768A911)
+- Transfer **45,000 USDS** to the Spark Assets Foundation at [**0xEabCb8C0346Ac072437362f1692706BA5768A911**](https://etherscan.io/address/0xEabCb8C0346Ac072437362f1692706BA5768A911)
 
 ##### [Avalanche] Spark Savings and Spark Liquidity Layer - Deprecate Avalanche
 
@@ -261,7 +261,7 @@ If this executive proposal passes, then the Spark proxy spell will deprecate the
 
 If this executive proposal passes, then the Spark proxy spell will deprecate the Spark Liquidity Layer on Unichain.
 
-##### [X-Layer] Spark Savings - Onboard the Spark-curated Morpho USDC vault on X-Layer to the spUSDC PAU
+##### [X-Layer] Spark Savings - Onboard the Spark-curated Morpho USDC Vault on X-Layer to the spUSDC PAU
 
 - **Authorization**: [Spark Snapshot Poll](https://snapshot.org/#/s:sparkfi.eth/proposal/0x807d260ba5b828e4e886727c66b4bb5666a76a8dcf78cff89bb2584f7580ea17)
 - **Proposal**: [Prime Technical Scope](https://forum.skyeco.com/t/november-19-2026-proposed-changes-to-spark-for-upcoming-spell/28390)
@@ -309,12 +309,12 @@ If this executive proposal passes, then the Grove proxy spell will set the follo
   - `maxAmount`: **10 million AUSD**
   - `slope`: **100 million AUSD per day**
 
-##### [Ethereum] GROVE Purchases - 300,000 USDS to the Grove Foundation Multisig to buy GROVE for the Grove SubProxy Over Three Months
+##### [Ethereum] GROVE Purchases - 300,000 USDS to the Grove Foundation Multisig to Buy GROVE for the Grove SubProxy Over Three Months
 
 - **Authorization**: [Grove Snapshot Poll](https://snapshot.box/#/s:grovefinance.eth/proposal/0x6b470d2a31a6e1723376a35691a551c521739d85f9f55672793857405cab88a5)
 - **Proposal**: [Prime Technical Scope](https://forum.skyeco.com/t/november-19-2026-proposed-changes-to-grove-for-upcoming-spell/28387)
 
-If this executive proposal passes, then the Grove proxy spell will transfer **300,000 USDS** to the at Grove Foundation multisig [0xE3EC4CC359E68c9dCE15Bf667b1aD37Df54a5a42](https://etherscan.io/address/0xE3EC4CC359E68c9dCE15Bf667b1aD37Df54a5a42) for the purchase of GROVE tokens through FalconX.
+If this executive proposal passes, then the Grove proxy spell will transfer **300,000 USDS** to the Grove Foundation multisig at [0xE3EC4CC359E68c9dCE15Bf667b1aD37Df54a5a42](https://etherscan.io/address/0xE3EC4CC359E68c9dCE15Bf667b1aD37Df54a5a42) for the purchase of GROVE tokens through FalconX.
 
 ##### [Ethereum + Base] Raise the Circle CCTP Transfer Rate Limits Between Ethereum and Base to 100,000,000 USDC
 
@@ -332,7 +332,7 @@ If this executive proposal passes, then the Grove proxy spell will increase the 
 
 #### Osero Proxy Spell
 
-The pull request for the Osero proxy spell can be viewed [here](https://github.com/osero-io/osero-spells/pull/8).
+The Pull Request for the Osero proxy spell can be viewed [here](https://github.com/osero-io/osero-spells/pull/8).
 
 ##### [Ethereum] Configure CCTP toward Base
 
@@ -344,12 +344,13 @@ If this executive proposal passes, then the Osero proxy spell will enable the [C
 - `destinationDomain`: **6**
 - `recipient`: [Osero ALM Proxy on Base](https://basescan.org/address/0x61ee4C5157AC876D1F5132Dc6832AC4896F533C9)
 - `minFeeCapRate`: **0**
+- `maxFeeCapRate`: **0**
 - `LIMIT_USDC_TO_CCTP`: **Unlimited**
 - USDC to Base limits:
   - `maxAmount`: **10 million USDC**
   - `slope`: **50 million USDC per day**
 
-##### [Ethereum] Relay the Osero Base payload to the Osero Receiver on Base
+##### [Ethereum] Relay the Osero Base Payload to the Osero Receiver on Base
 
 - **Authorization**: [Governance Poll 1657](https://vote.sky.money/polling/QmYWJPcE)
 - **Proposal**: [Prime Technical Scope](https://forum.skyeco.com/t/november-19-2026-proposed-changes-to-osero-for-upcoming-spell/28388)
@@ -402,6 +403,7 @@ If this executive proposal passes, then the Osero proxy spell will configure tra
   - `destinationDomain`: **0**
   - `recipient`: [Osero ALM Proxy on Ethereum Mainnet](https://etherscan.io/address/0x6d370e359e9cbd0Fd35Bb38fAF705D84238CB884)
   - `minFeeCapRate`: **0**
+  - `maxFeeCapRate`: **0**
 - Set the LIMIT_USDC_TO_CCTP rate limit on Base to **Unlimited**
 - Set the LIMIT_USDC_TO_DOMAIN rate limit for Ethereum Mainnet on Base:
   - `maxAmount`: **10 million USDC**
@@ -420,7 +422,7 @@ If this executive proposal passes, then the Osero proxy spell will onboard the O
 - Deposits:
   - `maxAmount`: **15 million USDC**
   - `slope`: **10 million USDC per day**
-- Withdrawls:
+- Withdrawals:
   - `maxAmount`: **Unlimited**
 
 ##### [Base] Grant DEFAULT_ADMIN_ROLE on the Osero AccessControls on Base and on the Osero ALM Rate Limits contract on Base to the Configurator on Base
