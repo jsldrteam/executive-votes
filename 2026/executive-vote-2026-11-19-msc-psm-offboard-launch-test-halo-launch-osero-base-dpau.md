@@ -20,9 +20,9 @@ If this executive proposal passes, the following **actions** will occur within t
 - The Monthly Settlement Cycle for October 2026 will be executed.
 - The Treasury Management Function will be executed, including burning SKY from the Pause Proxy, updating LSSKY->SKY staking rewards, and reducing the buyback and LSSKY->USDS reward cycles.
 - Core Vaults will be removed from the Debt Ceiling Instant Access Module and their debt ceilings will be set to 0.
-- The offboarding of the legacy USDC PSM will be finalized.
-- A Test Halo controlled by Sky Core will be initialized.
-- The Beacon and PAS on Base will be configured for Osero's DPAU launch on Base.
+- The offboarding of the legacy USDC Peg Stability Module (PSM) will be finalized.
+- A test Halo controlled by Sky Core will be initialized.
+- The Beacon and Parallelized Allocation System (PAS) on Base will be configured for Osero's Diamond Parallelized Allocation Unit (DPAU) launch on Base.
 - The Safe Harbor Agreement will be updated.
 - Prime Agent proxy spells for Spark, Grove, and Osero will be whitelisted in their respective StarGuard modules.
 
@@ -112,24 +112,24 @@ If this executive proposal passes, then Core Vaults will have their Debt Ceiling
 - Remove WSTETH-B from the DC-IAM.
 - Set WSTETH-B Debt Ceiling to **0 USDS**.
 
-### Finalize Legacy USDC Peg Stability Module Offboarding
+### Finalize Legacy USDC PSM Offboarding
 
 - **Authorization**: [Sky Atlas](https://sky-atlas.io/#0d0e2e1a-0502-4ee3-bc9d-8bd8ddde19ec)
 - **Proposal**: [Technical Scope](https://forum.skyeco.com/t/psm-usdc-a-housekeeping/28417)
 
-If this executive proposal passes, then the offboarding of the legacy USDC Peg Stability Module (PSM), `PSM-USDC-A` will be finalized by the following actions:
+If this executive proposal passes, then the offboarding of the legacy USDC PSM, `PSM-USDC-A`, will be finalized by the following actions:
 
-- Exit **99.328577 USDC** on [`MCD_JOIN_PSM_USDC_A`](https://etherscan.io/address/0x0A59649758aa4d66E25f08Dd01271e891fe52199) to the [Core Council Buffer](https://etherscan.io/address/0x210CFcF53d1f9648C1c4dcaEE677f0Cb06914364)
-- Remove `PSM-USDC-A` from [`ILK_REGISTRY`](https://etherscan.io/address/0x5a464C28D19848f44199D003BeF5ecc87d090F87)
-- Remove `PSM-USDC-A` from [`LINE_MOM`](https://etherscan.io/address/0x9c257e5Aaf73d964aEBc2140CA38078988fB0C10)
-- Cage [`MCD_JOIN_PSM_USDC_A`](https://etherscan.io/address/0x0A59649758aa4d66E25f08Dd01271e891fe52199)
-- Revoke the [`MCD_JOIN_PSM_USDC_A`](https://etherscan.io/address/0x0A59649758aa4d66E25f08Dd01271e891fe52199) authorization on [`MCD_VAT`](https://etherscan.io/address/0x35D1b3F3D7966A1DFe207aa4514C12a259A0492B)
-- Revoke the [`MCD_CLIP_PSM_USDC_A`](https://etherscan.io/address/0x66609b4799fd7cE12BA799AD01094aBD13d5014D) authorization on [`MCD_VAT`](https://etherscan.io/address/0x35D1b3F3D7966A1DFe207aa4514C12a259A0492B) and [`MCD_DOG`](https://etherscan.io/address/0x135954d155898D42C90D2a57824C690e0c7BEf1B)
+- Exit **99.328577 USDC** on [`MCD_JOIN_PSM_USDC_A`](https://etherscan.io/address/0x0A59649758aa4d66E25f08Dd01271e891fe52199) to the [Core Council Buffer](https://etherscan.io/address/0x210CFcF53d1f9648C1c4dcaEE677f0Cb06914364).
+- Remove `PSM-USDC-A` from [`ILK_REGISTRY`](https://etherscan.io/address/0x5a464C28D19848f44199D003BeF5ecc87d090F87).
+- Remove `PSM-USDC-A` from [`LINE_MOM`](https://etherscan.io/address/0x9c257e5Aaf73d964aEBc2140CA38078988fB0C10).
+- Cage [`MCD_JOIN_PSM_USDC_A`](https://etherscan.io/address/0x0A59649758aa4d66E25f08Dd01271e891fe52199).
+- Revoke the [`MCD_JOIN_PSM_USDC_A`](https://etherscan.io/address/0x0A59649758aa4d66E25f08Dd01271e891fe52199) authorization on [`MCD_VAT`](https://etherscan.io/address/0x35D1b3F3D7966A1DFe207aa4514C12a259A0492B).
+- Revoke the [`MCD_CLIP_PSM_USDC_A`](https://etherscan.io/address/0x66609b4799fd7cE12BA799AD01094aBD13d5014D) authorization on [`MCD_VAT`](https://etherscan.io/address/0x35D1b3F3D7966A1DFe207aa4514C12a259A0492B) and [`MCD_DOG`](https://etherscan.io/address/0x135954d155898D42C90D2a57824C690e0c7BEf1B).
 - Remove `PSM-USDC-A` related addresses from [chainlog](https://chainlog.skyeco.com):
-  - Remove [`MCD_PSM_USDC_A`](https://etherscan.io/address/0x89B78CfA322F6C5dE0aBcEecab66Aee45393cC5A) from the [chainlog](https://chainlog.skyeco.com)
-  - Remove [`MCD_JOIN_PSM_USDC_A`](https://etherscan.io/address/0x0A59649758aa4d66E25f08Dd01271e891fe52199) from the [chainlog](https://chainlog.skyeco.com)
-  - Remove [`MCD_CLIP_PSM_USDC_A`](https://etherscan.io/address/0x66609b4799fd7cE12BA799AD01094aBD13d5014D) from the [chainlog](https://chainlog.skyeco.com)
-  - Remove [`MCD_CLIP_CALC_PSM_USDC_A`](https://etherscan.io/address/0xbeE028b5Fa9eb0aDAC5eeF7E5B13383172b91A4E) from the [chainlog](https://chainlog.skyeco.com)
+  - Remove [`MCD_PSM_USDC_A`](https://etherscan.io/address/0x89B78CfA322F6C5dE0aBcEecab66Aee45393cC5A) from the [chainlog](https://chainlog.skyeco.com).
+  - Remove [`MCD_JOIN_PSM_USDC_A`](https://etherscan.io/address/0x0A59649758aa4d66E25f08Dd01271e891fe52199) from the [chainlog](https://chainlog.skyeco.com).
+  - Remove [`MCD_CLIP_PSM_USDC_A`](https://etherscan.io/address/0x66609b4799fd7cE12BA799AD01094aBD13d5014D) from the [chainlog](https://chainlog.skyeco.com).
+  - Remove [`MCD_CLIP_CALC_PSM_USDC_A`](https://etherscan.io/address/0xbeE028b5Fa9eb0aDAC5eeF7E5B13383172b91A4E) from the [chainlog](https://chainlog.skyeco.com).
 
 ### Initialize Test Halo SubProxy and StarGuard
 
@@ -153,7 +153,7 @@ If this executive proposal passes, then a new Test Halo SubProxy and StarGuard w
 - **Authorization**: [Sky Atlas](https://sky-atlas.io/#24c2fc14-448d-48be-a416-86bfad6f33fe)
 - **Proposal**: [Technical Scope](https://forum.skyeco.com/t/technical-scope-of-the-core-l2-spell-on-base-assisting-osero-s-dpau-launch/28413)
 
-If this executive proposal passes, then the Beacon and Parallelized Allocation System (PAS) on Base will be configured to enable activation of Osero's Diamond Parallelized Allocation Unit (DPAU). These changes will be executed using a reusable L2MulticallSpell at [0x682048513247076Fb5dB4762121BdB136182e4A9](https://basescan.org/address/0x682048513247076Fb5dB4762121BdB136182e4A9) through the following actions:
+If this executive proposal passes, then the Beacon and PAS on Base will be configured to enable activation of Osero's DPAU. These changes will be executed using a reusable L2MulticallSpell at [0x682048513247076Fb5dB4762121BdB136182e4A9](https://basescan.org/address/0x682048513247076Fb5dB4762121BdB136182e4A9) through the following actions:
 
 - Add ERC4626Facet to the Beacon via [Beacon.setIntegration](https://github.com/sky-ecosystem/diamond-pau/blob/a84fe9616412e3b6d10ea64301a3481f7dcf9a05/src/Beacon.sol#L49-L67) with:
   - `Beacon`: [**0x7ac96180C4d6b2A328D3a19ac059D0E7Fc3C6d41**](https://basescan.org/address/0x7ac96180C4d6b2A328D3a19ac059D0E7Fc3C6d41)
@@ -173,7 +173,7 @@ If this executive proposal passes, then the Beacon and Parallelized Allocation S
 - Add Osero's Controller to PAS via [BeamState.addController](https://github.com/sky-ecosystem/pas/blob/5263f26010d6543c7a95b3b2a94533e456af1911/src/BeamState.sol#L198-L201) with:
   - `BeamState`: [**0x29840a8519013F483d94781b5C1671b552A109e1**](https://basescan.org/address/0x29840a8519013F483d94781b5C1671b552A109e1)
   - `controller`: [**0x96F18963c1B1Dd83bB4D14119cF2C4b94F86d6a9**](https://basescan.org/address/0x96F18963c1B1Dd83bB4D14119cF2C4b94F86d6a9)
-- Add cBEAM for Osero’s Controller via [BeamState.setCBeamForController](https://github.com/sky-ecosystem/pas/blob/5263f26010d6543c7a95b3b2a94533e456af1911/src/BeamState.sol#L237-L242) with:
+- Add cBEAM for Osero's Controller via [BeamState.setCBeamForController](https://github.com/sky-ecosystem/pas/blob/5263f26010d6543c7a95b3b2a94533e456af1911/src/BeamState.sol#L237-L242) with:
   - `BeamState`: [**0x29840a8519013F483d94781b5C1671b552A109e1**](https://basescan.org/address/0x29840a8519013F483d94781b5C1671b552A109e1)
   - `controller`: [**0x96F18963c1B1Dd83bB4D14119cF2C4b94F86d6a9**](https://basescan.org/address/0x96F18963c1B1Dd83bB4D14119cF2C4b94F86d6a9)
   - `cBeam`: [**0x42D1038017E466b413aa44Ae798E30FB80b2E180**](https://basescan.org/address/0x42D1038017E466b413aa44Ae798E30FB80b2E180)
@@ -219,9 +219,9 @@ The Pull Request for the Spark proxy spell can be viewed [here](https://github.c
 
 If this executive proposal passes, then the Spark proxy spell will upgrade the Ethereum ALM Controller as follows:
 
-- Upgrade the Ethereum ALM Controller to **MainnetController v1.11.0**
+- Upgrade the Ethereum ALM Controller to **MainnetController v1.11.0**.
 
-The new controller address is [**0xc953972Cd006d1f12686fd7185c6D443b15900Cd**](https://etherscan.io/address/0xc953972Cd006d1f12686fd7185c6D443b15900Cd)
+The new controller address is [**0xc953972Cd006d1f12686fd7185c6D443b15900Cd**](https://etherscan.io/address/0xc953972Cd006d1f12686fd7185c6D443b15900Cd).
 
 ##### [Ethereum] SparkLend - Claim Accrued SparkLend Reserves
 
@@ -232,13 +232,13 @@ If this executive proposal passes, then the Spark proxy spell will claim accrued
 
 ##### [Ethereum] Spark Treasury - Transfer the December 2026 Grants
 
-- **Authorization**: [Governance Poll 1657](https://vote.sky.money/polling/QmYWJPcE)
+- **Authorization**: [Governance Poll ID 1657](https://vote.sky.money/polling/QmYWJPcE)
 - **Proposal**: [Prime Technical Scope](https://forum.skyeco.com/t/november-19-2026-proposed-changes-to-spark-for-upcoming-spell/28390)
 
 If this executive proposal passes, then the Spark proxy spell will execute the following grant transfers:
 
-- Transfer **865,000 USDS** to the Spark Foundation at [**0x92e4629a4510AF5819d7D1601464C233599fF5ec**](https://etherscan.io/address/0x92e4629a4510AF5819d7D1601464C233599fF5ec)
-- Transfer **45,000 USDS** to the Spark Assets Foundation at [**0xEabCb8C0346Ac072437362f1692706BA5768A911**](https://etherscan.io/address/0xEabCb8C0346Ac072437362f1692706BA5768A911)
+- Transfer **865,000 USDS** to the Spark Foundation at [**0x92e4629a4510AF5819d7D1601464C233599fF5ec**](https://etherscan.io/address/0x92e4629a4510AF5819d7D1601464C233599fF5ec).
+- Transfer **45,000 USDS** to the Spark Assets Foundation at [**0xEabCb8C0346Ac072437362f1692706BA5768A911**](https://etherscan.io/address/0xEabCb8C0346Ac072437362f1692706BA5768A911).
 
 ##### [Avalanche] Spark Savings and Spark Liquidity Layer - Deprecate Avalanche
 
@@ -249,6 +249,7 @@ If this executive proposal passes, then the Spark proxy spell will deprecate the
 
 - setting spUSDC deposit cap to zero
 - fixing the spUSDC rate at 0%
+- setting the spUSDC take rate limit to zero
 - zeroing the CCTP limits
 
 ##### [OP Mainnet] Spark Liquidity Layer - Deprecate the Spark Liquidity Layer on OP Mainnet
@@ -258,7 +259,7 @@ If this executive proposal passes, then the Spark proxy spell will deprecate the
 
 If this executive proposal passes, then the Spark proxy spell will deprecate the Spark Liquidity Layer on OP Mainnet. This will include:
 
-- returning remaining USDS and sUSDS to mainnet
+- returning remaining USDS and sUSDS to Ethereum Mainnet
 - setting all rate limits to zero
 
 ##### [Unichain] Spark Liquidity Layer - Deprecate the Spark Liquidity Layer on Unichain
@@ -266,9 +267,9 @@ If this executive proposal passes, then the Spark proxy spell will deprecate the
 - **Authorization**: [Spark Snapshot Poll 1](https://snapshot.org/#/s:sparkfi.eth/proposal/0x4ca8fbf47c4679aa74d3cd6681c89ced9383e9f923b7dc6f33c94f7f8f0cee5b), [Spark Snapshot Poll 2](https://snapshot.org/#/s:sparkfi.eth/proposal/0x38093a3ead044a60511d1451ae04d0768e65b4ac32e19069c4d78335b64df61d)
 - **Proposal**: [Prime Technical Scope](https://forum.skyeco.com/t/november-19-2026-proposed-changes-to-spark-for-upcoming-spell/28390)
 
-If this executive proposal passes, then the Spark proxy spell will deprecate the Spark Liquidity Layer on Unichain.
+If this executive proposal passes, then the Spark proxy spell will deprecate the Spark Liquidity Layer on Unichain. This will include:
 
-- returning remaining USDS and sUSDS to mainnet
+- returning remaining USDS and sUSDS to Ethereum Mainnet
 - setting all rate limits to zero
 
 ##### [X-Layer] Spark Savings - Onboard the Spark-curated Morpho USDC Vault on X-Layer to the spUSDC PAU
@@ -278,8 +279,8 @@ If this executive proposal passes, then the Spark proxy spell will deprecate the
 
 If this executive proposal passes, then the Spark proxy spell will onboard the Spark-curated Morpho USDC vault on X-Layer to the spUSDC PAU with the following [rate limits](https://sky-atlas.io/#8efb0a11-b798-48eb-af19-f65b38f039b5) and contracts:
 
-- Add ERC4626 Facet at [0x3fC45da74c30644172620520F6bAf6783aec11F2](https://www.oklink.com/xlayer/address/0x3fC45da74c30644172620520F6bAf6783aec11F2) to the spUSDC PAU on X-Layer
-- Set rate limits for the Morpho USDC vault on X-Layer at [0xDb6C283f8026a2D1D69b90464011baFB0A1090F4](https://www.oklink.com/xlayer/address/0xDb6C283f8026a2D1D69b90464011baFB0A1090F4)
+- Add ERC4626 Facet at [0x3fC45da74c30644172620520F6bAf6783aec11F2](https://www.oklink.com/xlayer/address/0x3fC45da74c30644172620520F6bAf6783aec11F2) to the spUSDC PAU on X-Layer.
+- Set rate limits for the Morpho USDC vault on X-Layer at [0xDb6C283f8026a2D1D69b90464011baFB0A1090F4](https://www.oklink.com/xlayer/address/0xDb6C283f8026a2D1D69b90464011baFB0A1090F4).
   - Deposit:
     - `maxAmount`: **15 million USDC**
     - `slope`: **10 million USDC/day**
@@ -294,14 +295,14 @@ The Pull Request for the Grove proxy spell can be viewed [here](https://github.c
 
 ##### [Ethereum] Treasury Distribution - 800,000 USDS to the Grove Foundation Multisig for November 2026
 
-- **Authorization**: [Governance Poll 1657](https://vote.sky.money/polling/QmYWJPcE)
+- **Authorization**: [Governance Poll ID 1657](https://vote.sky.money/polling/QmYWJPcE)
 - **Proposal**: [Prime Technical Scope](https://forum.skyeco.com/t/november-19-2026-proposed-changes-to-grove-for-upcoming-spell/28387)
 
 If this executive proposal passes, then the Grove proxy spell will execute the following treasury distribution:
 
 - Transfer **800,000 USDS** from the [Grove SubProxy](https://etherscan.io/address/0x1369f7b2b38c76B6478c0f0E66D94923421891Ba) to the Grove Foundation Multisig at [0xE3EC4CC359E68c9dCE15Bf667b1aD37Df54a5a42](https://etherscan.io/address/0xE3EC4CC359E68c9dCE15Bf667b1aD37Df54a5a42).
 
-##### [Ethereum] Agora AUSD Instance - Add Agora’s New Mint and Redeem Addresses
+##### [Ethereum] Agora AUSD Instance - Add Agora's New Mint and Redeem Addresses
 
 - **Authorization**: [Grove Snapshot Poll](https://snapshot.box/#/s:grovefinance.eth/proposal/0x6a024ffdd779c80702e6c11dd8343a64627e7bfe5cfe4f33b1a4fa6cd3f3a5cf)
 - **Proposal**: [Prime Technical Scope](https://forum.skyeco.com/t/november-19-2026-proposed-changes-to-grove-for-upcoming-spell/28387)
@@ -346,10 +347,10 @@ The Pull Request for the Osero proxy spell can be viewed [here](https://github.c
 
 ##### [Ethereum] Configure CCTP toward Base
 
-- **Authorization**: [Governance Poll 1657](https://vote.sky.money/polling/QmYWJPcE)
+- **Authorization**: [Governance Poll ID 1657](https://vote.sky.money/polling/QmYWJPcE)
 - **Proposal**: [Prime Technical Scope](https://forum.skyeco.com/t/november-19-2026-proposed-changes-to-osero-for-upcoming-spell/28388)
 
-If this executive proposal passes, then the Osero proxy spell will enable the [CCTP_FACET](https://etherscan.io/address/0xADf62692340e46EF90336f2e75ce3b37f1148873) on the Osero [`Controller`](https://etherscan.io/address/0x24169Afb34fAe4D4356BC54Bd80319131e35ca38) on mainnet. The domain parameters and [rate limits](https://sky-atlas.io/#8efb0a11-b798-48eb-af19-f65b38f039b5) will be set as follows:
+If this executive proposal passes, then the Osero proxy spell will enable the [CCTP_FACET](https://etherscan.io/address/0xADf62692340e46EF90336f2e75ce3b37f1148873) on the Osero [`Controller`](https://etherscan.io/address/0x24169Afb34fAe4D4356BC54Bd80319131e35ca38) on Ethereum Mainnet. The domain parameters and [rate limits](https://sky-atlas.io/#8efb0a11-b798-48eb-af19-f65b38f039b5) will be set as follows:
 
 - `destinationDomain`: **6**
 - `recipient`: [Osero ALM Proxy on Base](https://basescan.org/address/0x61ee4C5157AC876D1F5132Dc6832AC4896F533C9)
@@ -362,14 +363,14 @@ If this executive proposal passes, then the Osero proxy spell will enable the [C
 
 ##### [Ethereum] Relay the Osero Base Payload to the Osero Receiver on Base
 
-- **Authorization**: [Governance Poll 1657](https://vote.sky.money/polling/QmYWJPcE)
+- **Authorization**: [Governance Poll ID 1657](https://vote.sky.money/polling/QmYWJPcE)
 - **Proposal**: [Prime Technical Scope](https://forum.skyeco.com/t/november-19-2026-proposed-changes-to-osero-for-upcoming-spell/28388)
 
 If this executive proposal passes, then the Osero proxy spell will transmit the actions for execution on Base to the [Osero Receiver](https://basescan.org/address/0x63B4A33770F58205F3D646C5A635fF417a3819C3) through Base's [L1CrossDomainMessenger](https://etherscan.io/address/0x866E82a600A1414e583f7F13623F1aC5d58b0Afa).
 
 ##### [Base] Set up the Osero Diamond PAU on Base
 
-- **Authorization**: [Governance Poll 1657](https://vote.sky.money/polling/QmYWJPcE)
+- **Authorization**: [Governance Poll ID 1657](https://vote.sky.money/polling/QmYWJPcE)
 - **Proposal**: [Prime Technical Scope](https://forum.skyeco.com/t/november-19-2026-proposed-changes-to-osero-for-upcoming-spell/28388)
 
 If this executive proposal passes, then the Osero proxy spell will initialize the Osero Diamond PAU on Base as follows:
@@ -394,7 +395,7 @@ If this executive proposal passes, then the Osero proxy spell will initialize th
 
 ##### [Base] Enable the CCTP and ERC-4626 Facets on the Osero Controller on Base
 
-- **Authorization**: [Governance Poll 1657](https://vote.sky.money/polling/QmYWJPcE)
+- **Authorization**: [Governance Poll ID 1657](https://vote.sky.money/polling/QmYWJPcE)
 - **Proposal**: [Prime Technical Scope](https://forum.skyeco.com/t/november-19-2026-proposed-changes-to-osero-for-upcoming-spell/28388)
 
 If this executive proposal passes, then the Osero proxy spell will enable the following Facets on the Osero Controller on Base:
@@ -404,24 +405,24 @@ If this executive proposal passes, then the Osero proxy spell will enable the fo
 
 ##### [Base] Configure CCTP toward Ethereum Mainnet
 
-- **Authorization**: [Governance Poll 1657](https://vote.sky.money/polling/QmYWJPcE)
+- **Authorization**: [Governance Poll ID 1657](https://vote.sky.money/polling/QmYWJPcE)
 - **Proposal**: [Prime Technical Scope](https://forum.skyeco.com/t/november-19-2026-proposed-changes-to-osero-for-upcoming-spell/28388)
 
-If this executive proposal passes, then the Osero proxy spell will configure transfers of USDC through CCTP from Base to Ethereum mainnet with the following parameters and [rate limits](https://sky-atlas.io/#8efb0a11-b798-48eb-af19-f65b38f039b5):
+If this executive proposal passes, then the Osero proxy spell will configure transfers of USDC through CCTP from Base to Ethereum Mainnet with the following parameters and [rate limits](https://sky-atlas.io/#8efb0a11-b798-48eb-af19-f65b38f039b5):
 
 - Call Controller.cctp_setDomainParameters with:
   - `destinationDomain`: **0**
   - `recipient`: [Osero ALM Proxy on Ethereum Mainnet](https://etherscan.io/address/0x6d370e359e9cbd0Fd35Bb38fAF705D84238CB884)
   - `minFeeCapRate`: **0**
   - `maxFeeCapRate`: **0**
-- Set the LIMIT_USDC_TO_CCTP rate limit on Base to **Unlimited**
-- Set the LIMIT_USDC_TO_DOMAIN rate limit for Ethereum Mainnet on Base:
+- Set the `LIMIT_USDC_TO_CCTP` rate limit on Base to **Unlimited**
+- Set the `LIMIT_USDC_TO_DOMAIN` rate limit for Ethereum Mainnet on Base:
   - `maxAmount`: **10 million USDC**
   - `slope`: **50 million USDC per day**
 
 ##### [Base] Onboard the Osero x Gauntlet USDC Prime Vault on Base
 
-- **Authorization**: [Governance Poll 1657](https://vote.sky.money/polling/QmYWJPcE)
+- **Authorization**: [Governance Poll ID 1657](https://vote.sky.money/polling/QmYWJPcE)
 - **Proposal**: [Prime Technical Scope](https://forum.skyeco.com/t/november-19-2026-proposed-changes-to-osero-for-upcoming-spell/28388)
 
 If this executive proposal passes, then the Osero proxy spell will onboard the Osero x Gauntlet USDC Prime Vault on Base with the following parameters and [rate limits](https://sky-atlas.io/#8efb0a11-b798-48eb-af19-f65b38f039b5):
@@ -437,7 +438,7 @@ If this executive proposal passes, then the Osero proxy spell will onboard the O
 
 ##### [Base] Grant DEFAULT_ADMIN_ROLE on the Osero AccessControls on Base and on the Osero ALM Rate Limits Contract on Base to the Configurator on Base
 
-- **Authorization**: [Governance Poll 1657](https://vote.sky.money/polling/QmYWJPcE)
+- **Authorization**: [Governance Poll ID 1657](https://vote.sky.money/polling/QmYWJPcE)
 - **Proposal**: [Prime Technical Scope](https://forum.skyeco.com/t/november-19-2026-proposed-changes-to-osero-for-upcoming-spell/28388)
 
 If this executive proposal passes, then the Osero proxy spell will grant `DEFAULT_ADMIN_ROLE` to the [Configurator](https://basescan.org/address/0x458Acd38fD749F6325039e63e8Bc496dBc286D11) on Base for the Osero [AccessControls](https://basescan.org/address/0xBF79Eed65E43323893F604386CC2635C2cB03f2d) and Osero [ALM Rate Limits](https://basescan.org/address/0xd9E629588c48722E4c1bfcfb17829FecAf73839f) contracts.
