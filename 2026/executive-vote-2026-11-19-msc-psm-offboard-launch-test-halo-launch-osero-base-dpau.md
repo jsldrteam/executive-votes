@@ -1,6 +1,6 @@
 ---
 title: Template - [Executive Vote] Monthly Settlement Cycle for October 2026, Treasury Management Function Execution, Core Vault Debt Ceiling Reductions, Legacy USDC PSM Offboarding, Test Halo Initialization, Osero Base DPAU Activation, Safe Harbor Agreement Update, Prime Agent Proxy Spells - November 19, 2026
-summary: Execute the Monthly Settlement Cycle for October 2026 and the associated token transfers, burn SKY from the Pause Proxy balance, update LSSKY->SKY staking rewards and shorten the buyback and LSSKY->USDS reward cycles, remove core vaults from the Debt Ceiling Instant Access Module and set their debt ceilings to 0, finalize offboarding the legacy USDC PSM, initialize a test Halo, perform the necessary configuration steps to activate the Osero DPAU on Base, update the Safe Harbor Agreement, whitelist proxy spells for Spark, Grove, and Osero.
+summary: Execute the Monthly Settlement Cycle for October 2026 and the associated token transfers, burn SKY from the Pause Proxy balance, update LSSKY->SKY staking rewards, remove core vaults from the Debt Ceiling Instant Access Module and set their debt ceilings to 0, finalize offboarding the legacy USDC PSM, initialize a test Halo, perform the necessary configuration steps to activate the Osero DPAU on Base, update the Safe Harbor Agreement, whitelist proxy spells for Spark, Grove, and Osero.
 date: 2026-11-19T00:00:00.000Z
 address: "$spell_address"
 ---
@@ -18,7 +18,7 @@ If you are new to voting in the Sky Protocol, please see the [voting guide](http
 If this executive proposal passes, the following **actions** will occur within the Sky Protocol:
 
 - The Monthly Settlement Cycle for October 2026 will be executed.
-- The Treasury Management Function will be executed, including burning SKY from the Pause Proxy, updating LSSKY->SKY staking rewards, and shortening the buyback and LSSKY->USDS reward cycles.
+- The Treasury Management Function will be executed, including burning SKY from the Pause Proxy.
 - Core Vaults will be removed from the Debt Ceiling Instant Access Module (DC-IAM) and their debt ceilings will be set to 0.
 - The offboarding of the legacy USDC Peg Stability Module (PSM) will be finalized.
 - A test Halo controlled by Sky Core will be initialized.
